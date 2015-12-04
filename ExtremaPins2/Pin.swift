@@ -23,5 +23,6 @@ class Pin
         self.xCoordinaat = xCoordinaat
         self.yCoordinaat = yCoordinaat
         self.gebruikersNr = gebruikersNr
+        // test123
     }
 }
