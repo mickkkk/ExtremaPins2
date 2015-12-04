@@ -34,8 +34,8 @@ class JoinViewController: UIViewController {
         
         //let textDatum = dpDatum.date
         // ik maak een slaapplek aan.
-        
         /*
+        
         let query = PFQuery(className:"Groep")
         query.whereKey("naam", equalTo: tbGroepsnaam)
         query.findObjectsInBackgroundWithBlock {(NSArray objects, NSError error) -> Void in
@@ -71,8 +71,9 @@ class JoinViewController: UIViewController {
             else{
                 print("Error in retrieving \(error)")
             }
-        
         */
+        //
+        
         
         let Gebruiker = PFObject(className: "Gebruikers")
         Gebruiker["naam"] = self.tbNaam.text
