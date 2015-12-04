@@ -14,35 +14,92 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIo-fq-CFn">
-                                <rect key="frame" x="263" y="134" width="75" height="30"/>
-                                <state key="normal" title="Join Groep"/>
-                                <connections>
-                                    <segue destination="gXl-ud-Nfa" kind="show" id="oMR-wR-7O6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRv-og-pfs">
-                                <rect key="frame" x="254" y="324" width="92" height="30"/>
-                                <state key="normal" title="Create Groep"/>
-                                <connections>
-                                    <segue destination="kTm-9J-dOH" kind="show" id="ve1-LI-RPn"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="SHp-yZ-u8h">
+                                <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KId-2L-Dmq">
+                                <rect key="frame" x="-1" y="183" width="88" height="56"/>
+                                <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.0" black="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDa-f7-Xw5">
+                                <rect key="frame" x="89" y="42" width="207" height="134"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottom_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ed-Mb-qK3">
+                                <rect key="frame" x="-70" y="224" width="157" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottom_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="HVD-VS-Vxm">
+                                <rect key="frame" x="288" y="224" width="157" height="101"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ic-bB-Mh3">
+                                <rect key="frame" x="87" y="183" width="201" height="127"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIo-fq-CFn">
+                                        <rect key="frame" x="8" y="23" width="185" height="30"/>
+                                        <color key="backgroundColor" cyan="0.0" magenta="0.91000000000000003" yellow="0.71999999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Join Groep">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="gXl-ud-Nfa" kind="show" id="oMR-wR-7O6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRv-og-pfs">
+                                        <rect key="frame" x="8" y="70" width="185" height="30"/>
+                                        <color key="backgroundColor" cyan="0.0" magenta="0.91000000000000003" yellow="0.71999999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Create Groep">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="kTm-9J-dOH" kind="show" id="ve1-LI-RPn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cyan="0.20000000000000001" magenta="0.94000000000000006" yellow="0.83000000000000007" black="0.10000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTJ-uy-Uqw">
+                                <rect key="frame" x="-66" y="84" width="157" height="128"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXM-HO-M3m">
+                                <rect key="frame" x="288" y="184" width="88" height="55"/>
+                                <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.0" black="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="as1-bx-8M5">
+                                <rect key="frame" x="288" y="98" width="157" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pin_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="rFN-al-iwN">
+                                <rect key="frame" x="62" y="351" width="251" height="326"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vRv-og-pfs" secondAttribute="bottom" constant="100" id="2Vt-cR-TCc"/>
-                            <constraint firstItem="fIo-fq-CFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P9q-27-z4g"/>
-                            <constraint firstItem="vRv-og-pfs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n7N-n2-fnZ"/>
-                            <constraint firstItem="fIo-fq-CFn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="pDh-zX-D1v"/>
+                            <constraint firstItem="SHp-yZ-u8h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bHA-iI-3ye"/>
+                            <constraint firstAttribute="trailing" secondItem="SHp-yZ-u8h" secondAttribute="trailing" id="d6C-QG-q81"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SHp-yZ-u8h" secondAttribute="bottom" id="lHi-Bj-O7D"/>
+                            <constraint firstItem="SHp-yZ-u8h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xLn-OC-e05"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="482.5" y="351.5"/>
         </scene>
         <!--Join View Controller-->
         <scene sceneID="p22-Mx-eNg">
@@ -53,11 +110,11 @@
                         <viewControllerLayoutGuide type="bottom" id="nGZ-mT-H2I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HfB-bF-3TT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1c-NP-QVK">
-                                <rect key="frame" x="285" y="466" width="30" height="30"/>
+                                <rect key="frame" x="172" y="466" width="30" height="30"/>
                                 <state key="normal" title="Join"/>
                                 <connections>
                                     <action selector="btnJoin:" destination="gXl-ud-Nfa" eventType="touchUpInside" id="hsv-Ou-FqT"/>
@@ -139,7 +196,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cVE-Bl-b6S"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5i0-OH-xup">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Groepsnaam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="958-FN-eJn">
@@ -221,4 +278,13 @@
             <point key="canvasLocation" x="1354" y="740"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.png" width="492" height="875"/>
+        <image name="bottom_left.png" width="200" height="90"/>
+        <image name="bottom_right.png" width="200" height="90"/>
+        <image name="logo.png" width="199" height="129"/>
+        <image name="pin_photo.png" width="347" height="423"/>
+        <image name="top_left.png" width="200" height="90"/>
+        <image name="top_right.png" width="200" height="90"/>
+    </resources>
 </document>

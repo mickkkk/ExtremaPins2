@@ -26,7 +26,6 @@
 		F5678C1C1C1048DD0052EE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C1B1C1048DD0052EE01 /* AppDelegate.swift */; };
 		F5678C1E1C1048DD0052EE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C1D1C1048DD0052EE01 /* ViewController.swift */; };
 		F5678C211C1048DD0052EE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5678C1F1C1048DD0052EE01 /* Main.storyboard */; };
-		F5678C261C1048DD0052EE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5678C251C1048DD0052EE01 /* Assets.xcassets */; };
 		F5678C291C1048DD0052EE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5678C271C1048DD0052EE01 /* LaunchScreen.storyboard */; };
 		F5678C341C1048DD0052EE01 /* ExtremaPins2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C331C1048DD0052EE01 /* ExtremaPins2Tests.swift */; };
 		F5678C3F1C1048DD0052EE01 /* ExtremaPins2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C3E1C1048DD0052EE01 /* ExtremaPins2UITests.swift */; };
@@ -35,6 +34,7 @@
 		F5678C551C10493E0052EE01 /* Groep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4F1C10493E0052EE01 /* Groep.swift */; };
 		F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C501C10493E0052EE01 /* ConnectiePin.swift */; };
 		F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C511C10493E0052EE01 /* DatabaseViewController.swift */; };
+		F5B49B351C11A93800E7D8C4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = F5B49B341C11A93800E7D8C4 /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +75,6 @@
 		F5678C1B1C1048DD0052EE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5678C1D1C1048DD0052EE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5678C201C1048DD0052EE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F5678C251C1048DD0052EE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5678C281C1048DD0052EE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5678C2A1C1048DD0052EE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5678C2F1C1048DD0052EE01 /* ExtremaPins2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtremaPins2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +88,7 @@
 		F5678C4F1C10493E0052EE01 /* Groep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Groep.swift; sourceTree = "<group>"; };
 		F5678C501C10493E0052EE01 /* ConnectiePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectiePin.swift; sourceTree = "<group>"; };
 		F5678C511C10493E0052EE01 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
+		F5B49B341C11A93800E7D8C4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +167,10 @@
 		F5678C1A1C1048DD0052EE01 /* ExtremaPins2 */ = {
 			isa = PBXGroup;
 			children = (
+				F5B49B331C11A8A800E7D8C4 /* Afbeeldingen */,
 				F5678C1B1C1048DD0052EE01 /* AppDelegate.swift */,
 				F5678C1D1C1048DD0052EE01 /* ViewController.swift */,
 				F5678C1F1C1048DD0052EE01 /* Main.storyboard */,
-				F5678C251C1048DD0052EE01 /* Assets.xcassets */,
 				F5678C271C1048DD0052EE01 /* LaunchScreen.storyboard */,
 				F5678C2A1C1048DD0052EE01 /* Info.plist */,
 				F5678C4D1C10493E0052EE01 /* Gebruiker.swift */,
@@ -200,6 +200,14 @@
 				F5678C401C1048DD0052EE01 /* Info.plist */,
 			);
 			path = ExtremaPins2UITests;
+			sourceTree = "<group>";
+		};
+		F5B49B331C11A8A800E7D8C4 /* Afbeeldingen */ = {
+			isa = PBXGroup;
+			children = (
+				F5B49B341C11A93800E7D8C4 /* assets */,
+			);
+			name = Afbeeldingen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +317,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B49B351C11A93800E7D8C4 /* assets in Resources */,
 				F5678C291C1048DD0052EE01 /* LaunchScreen.storyboard in Resources */,
-				F5678C261C1048DD0052EE01 /* Assets.xcassets in Resources */,
 				F5678C211C1048DD0052EE01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
