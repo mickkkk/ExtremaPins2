@@ -72,7 +72,7 @@ class JoinViewController: UIViewController {
                 print("Error in retrieving \(error)")
             }
         */
-        //
+        //test voor ronald
         
         
         let Gebruiker = PFObject(className: "Gebruikers")
