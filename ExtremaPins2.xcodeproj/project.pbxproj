@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56396131C10825F003C3ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396121C10825F003C3ECF /* Parse.framework */; };
+		F56396151C108269003C3ECF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396141C108269003C3ECF /* Bolts.framework */; };
+		F56396171C10829D003C3ECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396161C10829D003C3ECF /* AudioToolbox.framework */; };
+		F56396191C1082A6003C3ECF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396181C1082A6003C3ECF /* CFNetwork.framework */; };
+		F563961B1C1082B5003C3ECF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563961A1C1082B5003C3ECF /* CoreGraphics.framework */; };
+		F563961D1C1082C0003C3ECF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563961C1C1082C0003C3ECF /* CoreLocation.framework */; };
+		F563961F1C1082CF003C3ECF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563961E1C1082CF003C3ECF /* QuartzCore.framework */; };
+		F56396211C1082DB003C3ECF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396201C1082DB003C3ECF /* Security.framework */; };
+		F56396231C1082E6003C3ECF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396221C1082E6003C3ECF /* StoreKit.framework */; };
+		F56396251C1082F2003C3ECF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396241C1082F2003C3ECF /* SystemConfiguration.framework */; };
+		F56396271C1082FE003C3ECF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396261C1082FE003C3ECF /* libz.tbd */; };
+		F56396291C10830C003C3ECF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396281C10830C003C3ECF /* libsqlite3.tbd */; };
+		F563962B1C108320003C3ECF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563962A1C108320003C3ECF /* Accounts.framework */; };
+		F563962D1C108327003C3ECF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563962C1C108327003C3ECF /* Social.framework */; };
+		F563962F1C1092F0003C3ECF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563962E1C1092F0003C3ECF /* JoinViewController.swift */; };
+		F56396311C1097B6003C3ECF /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56396301C1097B6003C3ECF /* CreateViewController.swift */; };
 		F5678C1C1C1048DD0052EE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C1B1C1048DD0052EE01 /* AppDelegate.swift */; };
 		F5678C1E1C1048DD0052EE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C1D1C1048DD0052EE01 /* ViewController.swift */; };
 		F5678C211C1048DD0052EE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5678C1F1C1048DD0052EE01 /* Main.storyboard */; };
-		F5678C241C1048DD0052EE01 /* ExtremaPins2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5678C221C1048DD0052EE01 /* ExtremaPins2.xcdatamodeld */; };
 		F5678C261C1048DD0052EE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5678C251C1048DD0052EE01 /* Assets.xcassets */; };
 		F5678C291C1048DD0052EE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5678C271C1048DD0052EE01 /* LaunchScreen.storyboard */; };
 		F5678C341C1048DD0052EE01 /* ExtremaPins2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C331C1048DD0052EE01 /* ExtremaPins2Tests.swift */; };
 		F5678C3F1C1048DD0052EE01 /* ExtremaPins2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C3E1C1048DD0052EE01 /* ExtremaPins2UITests.swift */; };
+		F5678C531C10493E0052EE01 /* Gebruiker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4D1C10493E0052EE01 /* Gebruiker.swift */; };
+		F5678C541C10493E0052EE01 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4E1C10493E0052EE01 /* Pin.swift */; };
+		F5678C551C10493E0052EE01 /* Groep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4F1C10493E0052EE01 /* Groep.swift */; };
+		F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C501C10493E0052EE01 /* ConnectiePin.swift */; };
+		F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C511C10493E0052EE01 /* DatabaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +55,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F56396121C10825F003C3ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F56396141C108269003C3ECF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F56396161C10829D003C3ECF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F56396181C1082A6003C3ECF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F563961A1C1082B5003C3ECF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F563961C1C1082C0003C3ECF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F563961E1C1082CF003C3ECF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F56396201C1082DB003C3ECF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F56396221C1082E6003C3ECF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F56396241C1082F2003C3ECF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F56396261C1082FE003C3ECF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F56396281C10830C003C3ECF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F563962A1C108320003C3ECF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		F563962C1C108327003C3ECF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F563962E1C1092F0003C3ECF /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		F56396301C1097B6003C3ECF /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		F5678C181C1048DD0052EE01 /* ExtremaPins2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtremaPins2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5678C1B1C1048DD0052EE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5678C1D1C1048DD0052EE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5678C201C1048DD0052EE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F5678C231C1048DD0052EE01 /* ExtremaPins2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExtremaPins2.xcdatamodel; sourceTree = "<group>"; };
 		F5678C251C1048DD0052EE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5678C281C1048DD0052EE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5678C2A1C1048DD0052EE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +84,11 @@
 		F5678C3A1C1048DD0052EE01 /* ExtremaPins2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtremaPins2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5678C3E1C1048DD0052EE01 /* ExtremaPins2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtremaPins2UITests.swift; sourceTree = "<group>"; };
 		F5678C401C1048DD0052EE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5678C4D1C10493E0052EE01 /* Gebruiker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gebruiker.swift; sourceTree = "<group>"; };
+		F5678C4E1C10493E0052EE01 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		F5678C4F1C10493E0052EE01 /* Groep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Groep.swift; sourceTree = "<group>"; };
+		F5678C501C10493E0052EE01 /* ConnectiePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectiePin.swift; sourceTree = "<group>"; };
+		F5678C511C10493E0052EE01 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F563962D1C108327003C3ECF /* Social.framework in Frameworks */,
+				F563962B1C108320003C3ECF /* Accounts.framework in Frameworks */,
+				F56396291C10830C003C3ECF /* libsqlite3.tbd in Frameworks */,
+				F56396271C1082FE003C3ECF /* libz.tbd in Frameworks */,
+				F56396251C1082F2003C3ECF /* SystemConfiguration.framework in Frameworks */,
+				F56396231C1082E6003C3ECF /* StoreKit.framework in Frameworks */,
+				F56396211C1082DB003C3ECF /* Security.framework in Frameworks */,
+				F563961F1C1082CF003C3ECF /* QuartzCore.framework in Frameworks */,
+				F563961D1C1082C0003C3ECF /* CoreLocation.framework in Frameworks */,
+				F563961B1C1082B5003C3ECF /* CoreGraphics.framework in Frameworks */,
+				F56396191C1082A6003C3ECF /* CFNetwork.framework in Frameworks */,
+				F56396171C10829D003C3ECF /* AudioToolbox.framework in Frameworks */,
+				F56396131C10825F003C3ECF /* Parse.framework in Frameworks */,
+				F56396151C108269003C3ECF /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +133,20 @@
 		F5678C0F1C1048DD0052EE01 = {
 			isa = PBXGroup;
 			children = (
+				F563962C1C108327003C3ECF /* Social.framework */,
+				F563962A1C108320003C3ECF /* Accounts.framework */,
+				F56396281C10830C003C3ECF /* libsqlite3.tbd */,
+				F56396261C1082FE003C3ECF /* libz.tbd */,
+				F56396241C1082F2003C3ECF /* SystemConfiguration.framework */,
+				F56396221C1082E6003C3ECF /* StoreKit.framework */,
+				F56396201C1082DB003C3ECF /* Security.framework */,
+				F563961E1C1082CF003C3ECF /* QuartzCore.framework */,
+				F563961C1C1082C0003C3ECF /* CoreLocation.framework */,
+				F563961A1C1082B5003C3ECF /* CoreGraphics.framework */,
+				F56396181C1082A6003C3ECF /* CFNetwork.framework */,
+				F56396161C10829D003C3ECF /* AudioToolbox.framework */,
+				F56396141C108269003C3ECF /* Bolts.framework */,
+				F56396121C10825F003C3ECF /* Parse.framework */,
 				F5678C1A1C1048DD0052EE01 /* ExtremaPins2 */,
 				F5678C321C1048DD0052EE01 /* ExtremaPins2Tests */,
 				F5678C3D1C1048DD0052EE01 /* ExtremaPins2UITests */,
@@ -105,7 +173,13 @@
 				F5678C251C1048DD0052EE01 /* Assets.xcassets */,
 				F5678C271C1048DD0052EE01 /* LaunchScreen.storyboard */,
 				F5678C2A1C1048DD0052EE01 /* Info.plist */,
-				F5678C221C1048DD0052EE01 /* ExtremaPins2.xcdatamodeld */,
+				F5678C4D1C10493E0052EE01 /* Gebruiker.swift */,
+				F5678C4E1C10493E0052EE01 /* Pin.swift */,
+				F5678C4F1C10493E0052EE01 /* Groep.swift */,
+				F5678C501C10493E0052EE01 /* ConnectiePin.swift */,
+				F5678C511C10493E0052EE01 /* DatabaseViewController.swift */,
+				F563962E1C1092F0003C3ECF /* JoinViewController.swift */,
+				F56396301C1097B6003C3ECF /* CreateViewController.swift */,
 			);
 			path = ExtremaPins2;
 			sourceTree = "<group>";
@@ -262,8 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5678C241C1048DD0052EE01 /* ExtremaPins2.xcdatamodeld in Sources */,
+				F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */,
+				F5678C531C10493E0052EE01 /* Gebruiker.swift in Sources */,
+				F56396311C1097B6003C3ECF /* CreateViewController.swift in Sources */,
+				F5678C541C10493E0052EE01 /* Pin.swift in Sources */,
+				F563962F1C1092F0003C3ECF /* JoinViewController.swift in Sources */,
+				F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */,
 				F5678C1E1C1048DD0052EE01 /* ViewController.swift in Sources */,
+				F5678C551C10493E0052EE01 /* Groep.swift in Sources */,
 				F5678C1C1C1048DD0052EE01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ExtremaPins2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.ExtremaPins2;
@@ -415,6 +499,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ExtremaPins2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.ExtremaPins2;
@@ -489,6 +577,7 @@
 				F5678C451C1048DD0052EE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5678C461C1048DD0052EE01 /* Build configuration list for PBXNativeTarget "ExtremaPins2Tests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +586,7 @@
 				F5678C481C1048DD0052EE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5678C491C1048DD0052EE01 /* Build configuration list for PBXNativeTarget "ExtremaPins2UITests" */ = {
 			isa = XCConfigurationList;
@@ -505,21 +595,9 @@
 				F5678C4B1C1048DD0052EE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F5678C221C1048DD0052EE01 /* ExtremaPins2.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F5678C231C1048DD0052EE01 /* ExtremaPins2.xcdatamodel */,
-			);
-			currentVersion = F5678C231C1048DD0052EE01 /* ExtremaPins2.xcdatamodel */;
-			path = ExtremaPins2.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F5678C101C1048DD0052EE01 /* Project object */;
 }
