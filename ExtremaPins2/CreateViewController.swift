@@ -34,7 +34,6 @@ class CreateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func btnCreate(sender: UIButton) {
         let Gebruiker = PFObject(className: "Gebruikers")
         Gebruiker["naam"] = tbNaam.text

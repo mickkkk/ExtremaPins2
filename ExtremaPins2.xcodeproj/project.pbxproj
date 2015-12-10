@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F51DD1EF1C1996A300E26E5B /* pinDEF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F51DD1EE1C1996A300E26E5B /* pinDEF.jpg */; };
+		F51DD1F11C19995900E26E5B /* backgroundDEF.png in Resources */ = {isa = PBXBuildFile; fileRef = F51DD1F01C19995900E26E5B /* backgroundDEF.png */; };
+		F51DD1F31C199B1E00E26E5B /* bottom_rightDEF.png in Resources */ = {isa = PBXBuildFile; fileRef = F51DD1F21C199B1E00E26E5B /* bottom_rightDEF.png */; };
+		F51DD1F51C199B2500E26E5B /* logoDEF.png in Resources */ = {isa = PBXBuildFile; fileRef = F51DD1F41C199B2500E26E5B /* logoDEF.png */; };
+		F51DD1F71C199B2B00E26E5B /* delenMapDEF.png in Resources */ = {isa = PBXBuildFile; fileRef = F51DD1F61C199B2B00E26E5B /* delenMapDEF.png */; };
+		F51DD1F91C199B3300E26E5B /* bottom_leftDEF.png in Resources */ = {isa = PBXBuildFile; fileRef = F51DD1F81C199B3300E26E5B /* bottom_leftDEF.png */; };
 		F5202F4A1C18C2760097C54A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5202F491C18C2760097C54A /* MapKit.framework */; };
 		F5202F4C1C18C46D0097C54A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5202F4B1C18C46D0097C54A /* MapViewController.swift */; };
 		F56396131C10825F003C3ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396121C10825F003C3ECF /* Parse.framework */; };
@@ -36,7 +42,6 @@
 		F5678C551C10493E0052EE01 /* Groep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4F1C10493E0052EE01 /* Groep.swift */; };
 		F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C501C10493E0052EE01 /* ConnectiePin.swift */; };
 		F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C511C10493E0052EE01 /* DatabaseViewController.swift */; };
-		F5B49B351C11A93800E7D8C4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = F5B49B341C11A93800E7D8C4 /* assets */; };
 		F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3CAC61C196D5700426E73 /* ShareViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F51DD1EE1C1996A300E26E5B /* pinDEF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinDEF.jpg; sourceTree = "<group>"; };
+		F51DD1F01C19995900E26E5B /* backgroundDEF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundDEF.png; sourceTree = "<group>"; };
+		F51DD1F21C199B1E00E26E5B /* bottom_rightDEF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_rightDEF.png; sourceTree = "<group>"; };
+		F51DD1F41C199B2500E26E5B /* logoDEF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoDEF.png; sourceTree = "<group>"; };
+		F51DD1F61C199B2B00E26E5B /* delenMapDEF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delenMapDEF.png; sourceTree = "<group>"; };
+		F51DD1F81C199B3300E26E5B /* bottom_leftDEF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_leftDEF.png; sourceTree = "<group>"; };
 		F5202F491C18C2760097C54A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5202F4B1C18C46D0097C54A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F56396121C10825F003C3ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -93,7 +104,6 @@
 		F5678C4F1C10493E0052EE01 /* Groep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Groep.swift; sourceTree = "<group>"; };
 		F5678C501C10493E0052EE01 /* ConnectiePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectiePin.swift; sourceTree = "<group>"; };
 		F5678C511C10493E0052EE01 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
-		F5B49B341C11A93800E7D8C4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		F5D3CAC61C196D5700426E73 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,7 +225,12 @@
 		F5B49B331C11A8A800E7D8C4 /* Afbeeldingen */ = {
 			isa = PBXGroup;
 			children = (
-				F5B49B341C11A93800E7D8C4 /* assets */,
+				F51DD1F81C199B3300E26E5B /* bottom_leftDEF.png */,
+				F51DD1F61C199B2B00E26E5B /* delenMapDEF.png */,
+				F51DD1F41C199B2500E26E5B /* logoDEF.png */,
+				F51DD1F21C199B1E00E26E5B /* bottom_rightDEF.png */,
+				F51DD1F01C19995900E26E5B /* backgroundDEF.png */,
+				F51DD1EE1C1996A300E26E5B /* pinDEF.jpg */,
 			);
 			name = Afbeeldingen;
 			sourceTree = "<group>";
@@ -327,9 +342,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B49B351C11A93800E7D8C4 /* assets in Resources */,
 				F5678C291C1048DD0052EE01 /* LaunchScreen.storyboard in Resources */,
+				F51DD1EF1C1996A300E26E5B /* pinDEF.jpg in Resources */,
+				F51DD1F31C199B1E00E26E5B /* bottom_rightDEF.png in Resources */,
+				F51DD1F91C199B3300E26E5B /* bottom_leftDEF.png in Resources */,
 				F5678C211C1048DD0052EE01 /* Main.storyboard in Resources */,
+				F51DD1F71C199B2B00E26E5B /* delenMapDEF.png in Resources */,
+				F51DD1F51C199B2500E26E5B /* logoDEF.png in Resources */,
+				F51DD1F11C19995900E26E5B /* backgroundDEF.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
