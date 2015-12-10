@@ -428,6 +428,9 @@
                                         <state key="normal" title="Start">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnStart:" destination="7zI-2J-ez9" eventType="touchUpInside" id="46k-aB-vD0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.91000000000000003" yellow="0.71999999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -489,6 +492,7 @@
                     <connections>
                         <outlet property="lblAantalLeden" destination="ZKM-6t-msP" id="zyo-u6-1gw"/>
                         <outlet property="lblGroepsnaam" destination="Lgl-fM-iIU" id="wFH-FD-SwO"/>
+                        <outlet property="mapview" destination="ZOl-wb-dgI" id="izf-aB-E76"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgG-d7-9En" userLabel="First Responder" sceneMemberID="firstResponder"/>
