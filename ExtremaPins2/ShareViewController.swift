@@ -9,9 +9,16 @@
 import UIKit
 
 class ShareViewController: UIViewController {
+    
+    var groepsnaamCreate: String!
 
+
+    @IBOutlet weak var lblGroepsnaam: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblGroepsnaam.text = groepsnaamCreate
 
         // Do any additional setup after loading the view.
     }
@@ -20,6 +27,8 @@ class ShareViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
