@@ -80,6 +80,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.locationManager.stopUpdatingLocation()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "SegueMap"){
+            let svc = segue.destinationViewController as! GebruikersViewController
+            svc.groepsnaam = lblGroepsnaam.text
+        }
+    }
+    
 
     /*
     // MARK: - Navigation
