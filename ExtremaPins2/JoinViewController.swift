@@ -81,13 +81,13 @@ class JoinViewController: UIViewController {
         Gebruiker["leeftijd"] = self.tbLeeftijd.text
         Gebruiker["geslacht"] = self.tbGeslacht.text
         Gebruiker["isBeheerder"] = false
+        Gebruiker["groepsnaam"] = self.tbGroepsnaam.text
         
         // hier schrijf ik de gebruiker weg naar de database.
         Gebruiker.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             self.lblGebruikerJoined.hidden = false
             
         }
-        
     }
 
     /*

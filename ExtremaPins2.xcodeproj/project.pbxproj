@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5202F4A1C18C2760097C54A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5202F491C18C2760097C54A /* MapKit.framework */; };
+		F5202F4C1C18C46D0097C54A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5202F4B1C18C46D0097C54A /* MapViewController.swift */; };
 		F56396131C10825F003C3ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396121C10825F003C3ECF /* Parse.framework */; };
 		F56396151C108269003C3ECF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396141C108269003C3ECF /* Bolts.framework */; };
 		F56396171C10829D003C3ECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396161C10829D003C3ECF /* AudioToolbox.framework */; };
@@ -35,6 +37,7 @@
 		F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C501C10493E0052EE01 /* ConnectiePin.swift */; };
 		F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C511C10493E0052EE01 /* DatabaseViewController.swift */; };
 		F5B49B351C11A93800E7D8C4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = F5B49B341C11A93800E7D8C4 /* assets */; };
+		F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3CAC61C196D5700426E73 /* ShareViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5202F491C18C2760097C54A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F5202F4B1C18C46D0097C54A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F56396121C10825F003C3ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F56396141C108269003C3ECF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F56396161C10829D003C3ECF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -89,6 +94,7 @@
 		F5678C501C10493E0052EE01 /* ConnectiePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectiePin.swift; sourceTree = "<group>"; };
 		F5678C511C10493E0052EE01 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
 		F5B49B341C11A93800E7D8C4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		F5D3CAC61C196D5700426E73 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5202F4A1C18C2760097C54A /* MapKit.framework in Frameworks */,
 				F563962D1C108327003C3ECF /* Social.framework in Frameworks */,
 				F563962B1C108320003C3ECF /* Accounts.framework in Frameworks */,
 				F56396291C10830C003C3ECF /* libsqlite3.tbd in Frameworks */,
@@ -133,6 +140,7 @@
 		F5678C0F1C1048DD0052EE01 = {
 			isa = PBXGroup;
 			children = (
+				F5202F491C18C2760097C54A /* MapKit.framework */,
 				F563962C1C108327003C3ECF /* Social.framework */,
 				F563962A1C108320003C3ECF /* Accounts.framework */,
 				F56396281C10830C003C3ECF /* libsqlite3.tbd */,
@@ -180,6 +188,8 @@
 				F5678C511C10493E0052EE01 /* DatabaseViewController.swift */,
 				F563962E1C1092F0003C3ECF /* JoinViewController.swift */,
 				F56396301C1097B6003C3ECF /* CreateViewController.swift */,
+				F5202F4B1C18C46D0097C54A /* MapViewController.swift */,
+				F5D3CAC61C196D5700426E73 /* ShareViewController.swift */,
 			);
 			path = ExtremaPins2;
 			sourceTree = "<group>";
@@ -345,8 +355,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */,
+				F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */,
 				F5678C531C10493E0052EE01 /* Gebruiker.swift in Sources */,
 				F56396311C1097B6003C3ECF /* CreateViewController.swift in Sources */,
+				F5202F4C1C18C46D0097C54A /* MapViewController.swift in Sources */,
 				F5678C541C10493E0052EE01 /* Pin.swift in Sources */,
 				F563962F1C1092F0003C3ECF /* JoinViewController.swift in Sources */,
 				F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */,

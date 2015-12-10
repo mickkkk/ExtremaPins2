@@ -34,27 +34,28 @@ class CreateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     @IBAction func btnCreate(sender: UIButton) {
         let Gebruiker = PFObject(className: "Gebruikers")
         Gebruiker["naam"] = tbNaam.text
         Gebruiker["woonplaats"] = tbWoonplaats.text
         Gebruiker["leeftijd"] = tbLeeftijd.text
         Gebruiker["geslacht"] = tbGeslacht.text
+        Gebruiker["groepsnaam"] = tbGroepsnaam.text
         Gebruiker["isBeheerder"] = true
         
         // hier schrijf ik de gebruiker weg naar de database als beheerder.
         Gebruiker.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            self.lblGroepCreated.hidden = false
+            //self.lblGroepCreated.hidden = false
             
         }
         
         let Groep = PFObject(className: "Groep")
         Groep["naam"] = tbGroepsnaam.text
-        Groep["aantal"] = 1 
         
         // hier schrijf ik de groep weg naar de database.
         Groep.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            self.lblGroepCreated.hidden = false
+            //self.lblGroepCreated.hidden = false
         }
         
     }
