@@ -11,14 +11,24 @@ import UIKit
 class ShareViewController: UIViewController {
     
     var groepsnaamCreate: String!
+    var groepsnaamJoin: String!
 
 
     @IBOutlet weak var lblGroepsnaam: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(groepsnaamCreate != nil){
+            lblGroepsnaam.text = groepsnaamCreate
+        }
+        else if(groepsnaamJoin != nil){
+            lblGroepsnaam.text = groepsnaamJoin
+        }
+        else{
+            lblGroepsnaam.text = "Groepsnaam"
+        }
         
-        lblGroepsnaam.text = groepsnaamCreate
+        
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +36,13 @@ class ShareViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "SegueShare"){
+            let svc = segue.destinationViewController as! MapViewController
+            svc.groepsnaam = lblGroepsnaam.text
+        }
     }
     
     

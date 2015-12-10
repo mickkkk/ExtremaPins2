@@ -14,7 +14,12 @@ import Parse
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
+    
+    var groepsnaam: String!
 
+    @IBOutlet weak var lblGroepsnaam: UILabel!
+    @IBOutlet weak var lblAantalLeden: UILabel!
+    
     @IBOutlet weak var mapView: MKMapView!
     
     
@@ -29,7 +34,27 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         self.locationManager.startUpdatingLocation()
         
+        lblGroepsnaam.text = groepsnaam
+        
         //self.mapView.showsUserLocation = true
+        
+        
+        let query = PFQuery(className:"Gebruikers")
+        query.whereKey("groepsnaam", equalTo: groepsnaam)
+        query.countObjectsInBackgroundWithBlock {(int count, NSError error) -> Void in
+            
+            
+            
+            if error == nil {
+                    self.lblAantalLeden.text = String(count)
+                
+            }
+            else{
+                print("Error in retrieving \(error)")
+            }
+        }
+
+        
 
         // Do any additional setup after loading the view.
     }

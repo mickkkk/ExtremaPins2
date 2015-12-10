@@ -157,7 +157,7 @@
                                         <connections>
                                             <action selector="btnCreate:" destination="kTm-9J-dOH" eventType="touchUpInside" id="sCV-Ui-2lT"/>
                                             <action selector="btnJoin:" destination="gXl-ud-Nfa" eventType="touchUpInside" id="pgk-zB-vcp"/>
-                                            <segue destination="L6V-1j-Qh0" kind="show" id="E0f-mB-J28"/>
+                                            <segue destination="L6V-1j-Qh0" kind="show" identifier="SegueJoin" id="E0f-mB-J28"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -354,7 +354,7 @@
                                         <connections>
                                             <action selector="btnCreate:" destination="kTm-9J-dOH" eventType="touchUpInside" id="zl8-C8-nQD"/>
                                             <action selector="btnJoin:" destination="gXl-ud-Nfa" eventType="touchUpInside" id="GLW-xi-5t6"/>
-                                            <segue destination="7zI-2J-ez9" kind="show" id="CUI-Wy-msE"/>
+                                            <segue destination="7zI-2J-ez9" kind="show" identifier="SegueShare" id="CUI-Wy-msE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -483,6 +483,10 @@
                             <constraint firstItem="xeL-ok-xWN" firstAttribute="top" secondItem="ZOl-wb-dgI" secondAttribute="bottom" id="ytg-nX-zrQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblAantalLeden" destination="ZKM-6t-msP" id="zyo-u6-1gw"/>
+                        <outlet property="lblGroepsnaam" destination="Lgl-fM-iIU" id="wFH-FD-SwO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgG-d7-9En" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -626,6 +630,6 @@
         <image name="backgroundDEF.png" width="492" height="875"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fzJ-tL-2EI"/>
+        <segue reference="E0f-mB-J28"/>
     </inferredMetricsTieBreakers>
 </document>

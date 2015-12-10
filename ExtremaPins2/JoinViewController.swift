@@ -89,6 +89,13 @@ class JoinViewController: UIViewController {
             
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "SegueJoin"){
+            let svc = segue.destinationViewController as! ShareViewController
+            svc.groepsnaamJoin = tbGroepsnaam.text
+        }
+    }
 
     /*
     // MARK: - Navigation
