@@ -16,6 +16,7 @@
 		F5202F4A1C18C2760097C54A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5202F491C18C2760097C54A /* MapKit.framework */; };
 		F5202F4C1C18C46D0097C54A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5202F4B1C18C46D0097C54A /* MapViewController.swift */; };
 		F522098A1C1A2ABD00DD7ACD /* GebruikersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */; };
+		F5498A241C2BFE2400C44524 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5498A231C2BFE2400C44524 /* IntroViewController.swift */; };
 		F56396131C10825F003C3ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396121C10825F003C3ECF /* Parse.framework */; };
 		F56396151C108269003C3ECF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396141C108269003C3ECF /* Bolts.framework */; };
 		F56396171C10829D003C3ECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396161C10829D003C3ECF /* AudioToolbox.framework */; };
@@ -73,6 +74,7 @@
 		F5202F491C18C2760097C54A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5202F4B1C18C46D0097C54A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GebruikersViewController.swift; sourceTree = "<group>"; };
+		F5498A231C2BFE2400C44524 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F56396121C10825F003C3ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F56396141C108269003C3ECF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F56396161C10829D003C3ECF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -203,6 +205,7 @@
 				F5202F4B1C18C46D0097C54A /* MapViewController.swift */,
 				F5D3CAC61C196D5700426E73 /* ShareViewController.swift */,
 				F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */,
+				F5498A231C2BFE2400C44524 /* IntroViewController.swift */,
 			);
 			path = ExtremaPins2;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */,
+				F5498A241C2BFE2400C44524 /* IntroViewController.swift in Sources */,
 				F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */,
 				F5678C531C10493E0052EE01 /* Gebruiker.swift in Sources */,
 				F56396311C1097B6003C3ECF /* CreateViewController.swift in Sources */,
