@@ -15,10 +15,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     let locationManager = CLLocationManager()
     
+    @IBOutlet weak var btnZetPin: UIButton!
+    @IBOutlet weak var btnLeden: UIButton!
+    
+    @IBOutlet weak var mapView: MKMapView!
     var groepsnaam: String!
 
-    @IBOutlet weak var lblGroepsnaam: UILabel!
-    @IBOutlet weak var lblAantalLeden: UILabel!
     
     @IBAction func btnStart(sender: UIButton) {
         sender.setTitle("Stop", forState: .Normal)
@@ -84,13 +86,64 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.locationManager.delegate = self
+        
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        self.locationManager.startUpdatingLocation()
+        
+        self.mapView.showsUserLocation = true
+        
+        //var locationFontys = CLLocationCoordinate2DMake(51.45169,5.48160)
+        
+        let pin1 = CLLocationCoordinate2DMake(51.423189,5.495911)
+        
+        let pin2 = CLLocationCoordinate2DMake(51.808615, 4.699402)
+        
+        let pin3 = CLLocationCoordinate2DMake(51.570241, 5.089417)
+        
+        let pin4 = CLLocationCoordinate2DMake(51.812011, 5.457458)
+        
+        let pin5 = CLLocationCoordinate2DMake(51.426614,4.617004)
         
         
-        lblGroepsnaam.text = groepsnaam
+        let annotation1 = MKPointAnnotation()
+        annotation1.coordinate = pin1
+        annotation1.title = "Title 1"
+        annotation1.subtitle = "Subtitle 1"
+        
+        let annotation2 = MKPointAnnotation()
+        annotation2.coordinate = pin2
+        annotation2.title = "Title 2"
+        annotation2.subtitle = "Subtitle 2"
+        
+        let annotation3 = MKPointAnnotation()
+        annotation3.coordinate = pin3
+        annotation3.title = "Title1 3"
+        annotation3.subtitle = "Subtitle3"
+        
+        let annotation4 = MKPointAnnotation()
+        annotation4.coordinate = pin4
+        annotation4.title = "Title 4"
+        annotation4.subtitle = "Subtitle 4"
+        
+        let annotation5 = MKPointAnnotation()
+        annotation5.coordinate = pin5
+        annotation5.title = "Title 5"
+        annotation5.subtitle = "Subtitle3"
+        
+        mapview.addAnnotation(annotation1)
+        mapview.addAnnotation(annotation2)
+        mapview.addAnnotation(annotation3)
+        mapview.addAnnotation(annotation4)
+        mapview.addAnnotation(annotation5)
+        
         
         //self.mapView.showsUserLocation = true
         
-        
+        /*
         let query = PFQuery(className:"Gebruikers")
         query.whereKey("groepsnaam", equalTo: groepsnaam)
         query.countObjectsInBackgroundWithBlock {(int count, NSError error) -> Void in
@@ -105,7 +158,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 print("Error in retrieving \(error)")
             }
         }
-
+*/
         
 
         // Do any additional setup after loading the view.
@@ -127,18 +180,22 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         //let region = MKCoordinateRegion(center: locationFontys, span: MKCoordinateSpan(latitudeDelta:0.08, longitudeDelta:0.08))
         
-        self.mapview.setRegion(region, animated: true)
+        self.mapView.setRegion(region, animated: true)
         
         self.locationManager.stopUpdatingLocation()
     }
     
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Errors: " + error.localizedDescription, terminator: "")
+    }
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "SegueMap"){
             let svc = segue.destinationViewController as! GebruikersViewController
             svc.groepsnaam = lblGroepsnaam.text
         }
     }
-    
+    */
 
     /*
     // MARK: - Navigation
