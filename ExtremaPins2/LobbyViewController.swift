@@ -14,6 +14,9 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var lblLid1: UILabel!
     @IBOutlet weak var lblLid2: UILabel!
     @IBOutlet weak var lblLid3: UILabel!
+    @IBOutlet weak var lblLid4: UILabel!
+    @IBOutlet weak var lblLid5: UILabel!
+    @IBOutlet weak var lblLid6: UILabel!
     
     var naam: String!
     
@@ -41,10 +44,13 @@ class LobbyViewController: UIViewController {
                         let lbl1Let = gebruiker.objectForKey("naam")
                         let lbl1String:String = lbl1Let as! String
                         self.lblLid1.text = lbl1String
-                        if(self.lblLid1 == self.naam)
+                        /*
+                        if(self.lblLid1.isEqual(self.naam))
                         {
-                            self.lblLid1.textColor = UIColor.redColor()
+                            self.lblLid2.textColor = UIColor.redColor()
+                            //self.lblLid1.textColor = UIColor(red: 1.0, green: 0.000, blue: 0.0, alpha: 1.0)
                         }
+                        */
                     }
                     if(i == 1)
                     {
@@ -52,6 +58,7 @@ class LobbyViewController: UIViewController {
                         let lbl2Let = gebruiker.objectForKey("naam")
                         let lbl2String:String = lbl2Let as! String
                         self.lblLid2.text = lbl2String
+                        
                     }
                     if(i == 2)
                     {
@@ -59,6 +66,31 @@ class LobbyViewController: UIViewController {
                         let lbl3Let = gebruiker.objectForKey("naam")
                         let lbl3String:String = lbl3Let as! String
                         self.lblLid3.text = lbl3String
+                        
+                    }
+                    if(i == 3)
+                    {
+                        self.lblLid4.hidden = false;
+                        let lbl4Let = gebruiker.objectForKey("naam")
+                        let lbl4String:String = lbl4Let as! String
+                        self.lblLid4.text = lbl4String
+                        
+                    }
+                    if(i == 4)
+                    {
+                        self.lblLid5.hidden = false;
+                        let lbl5Let = gebruiker.objectForKey("naam")
+                        let lbl5String:String = lbl5Let as! String
+                        self.lblLid5.text = lbl5String
+                        
+                    }
+                    if(i == 5)
+                    {
+                        self.lblLid6.hidden = false;
+                        let lbl6Let = gebruiker.objectForKey("naam")
+                        let lbl6String:String = lbl6Let as! String
+                        self.lblLid6.text = lbl6String
+                        
                     }
                     i = i + 1
                 }

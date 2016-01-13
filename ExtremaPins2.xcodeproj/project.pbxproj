@@ -49,6 +49,9 @@
 		F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3CAC61C196D5700426E73 /* ShareViewController.swift */; };
 		F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B181C465FE8009B61EB /* LobbyViewController.swift */; };
 		F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B1A1C466241009B61EB /* NaamViewController.swift */; };
+		F5F70B1F1C467E30009B61EB /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F70B1C1C467E30009B61EB /* facebook.png */; };
+		F5F70B201C467E30009B61EB /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F70B1D1C467E30009B61EB /* twitter.png */; };
+		F5F70B211C467E30009B61EB /* whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F70B1E1C467E30009B61EB /* whatsapp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 		F5D3CAC61C196D5700426E73 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		F5F70B181C465FE8009B61EB /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		F5F70B1A1C466241009B61EB /* NaamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaamViewController.swift; sourceTree = "<group>"; };
+		F5F70B1C1C467E30009B61EB /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		F5F70B1D1C467E30009B61EB /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		F5F70B1E1C467E30009B61EB /* whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatsapp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +247,9 @@
 		F5B49B331C11A8A800E7D8C4 /* Afbeeldingen */ = {
 			isa = PBXGroup;
 			children = (
+				F5F70B1C1C467E30009B61EB /* facebook.png */,
+				F5F70B1D1C467E30009B61EB /* twitter.png */,
+				F5F70B1E1C467E30009B61EB /* whatsapp.png */,
 				F50CA5181C3FC3750042EA09 /* pin_photo.png */,
 				F50CA5161C3FC1EC0042EA09 /* ribbon.png */,
 				F51DD1F81C199B3300E26E5B /* bottom_leftDEF.png */,
@@ -363,13 +372,16 @@
 				F50CA5171C3FC1EC0042EA09 /* ribbon.png in Resources */,
 				F5678C291C1048DD0052EE01 /* LaunchScreen.storyboard in Resources */,
 				F51DD1EF1C1996A300E26E5B /* pinDEF.jpg in Resources */,
+				F5F70B1F1C467E30009B61EB /* facebook.png in Resources */,
 				F51DD1F31C199B1E00E26E5B /* bottom_rightDEF.png in Resources */,
 				F51DD1F91C199B3300E26E5B /* bottom_leftDEF.png in Resources */,
 				F5678C211C1048DD0052EE01 /* Main.storyboard in Resources */,
 				F51DD1F71C199B2B00E26E5B /* delenMapDEF.png in Resources */,
 				F51DD1F51C199B2500E26E5B /* logoDEF.png in Resources */,
+				F5F70B201C467E30009B61EB /* twitter.png in Resources */,
 				F50CA5191C3FC3750042EA09 /* pin_photo.png in Resources */,
 				F51DD1F11C19995900E26E5B /* backgroundDEF.png in Resources */,
+				F5F70B211C467E30009B61EB /* whatsapp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
