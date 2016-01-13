@@ -199,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="167" y="299"/>
         </scene>
-        <!--Share View Controller-->
+        <!--Lobby View Controller-->
         <scene sceneID="hDG-Yb-FL4">
             <objects>
-                <viewController id="L6V-1j-Qh0" customClass="ShareViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="L6V-1j-Qh0" customClass="LobbyViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wab-rT-UHf"/>
                         <viewControllerLayoutGuide type="bottom" id="RTP-QA-j9j"/>
@@ -391,6 +391,11 @@
                             <constraint firstAttribute="trailing" secondItem="f1A-m1-aHa" secondAttribute="trailing" id="xsx-bE-Uyg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblLid1" destination="ZPS-cM-Bkr" id="f0R-kx-sMY"/>
+                        <outlet property="lblLid2" destination="H9x-zP-cqc" id="czc-n7-50H"/>
+                        <outlet property="lblLid3" destination="CMC-8S-XbD" id="A1s-a1-wRV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzw-UH-rMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -732,10 +737,10 @@
             </objects>
             <point key="canvasLocation" x="3543" y="329"/>
         </scene>
-        <!--Create View Controller-->
+        <!--Naam View Controller-->
         <scene sceneID="nfo-bE-5zC">
             <objects>
-                <viewController id="kTm-9J-dOH" customClass="CreateViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kTm-9J-dOH" customClass="NaamViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="93a-Kc-ajJ"/>
                         <viewControllerLayoutGuide type="bottom" id="cVE-Bl-b6S"/>
@@ -793,6 +798,10 @@
                             <constraint firstItem="cVE-Bl-b6S" firstAttribute="top" secondItem="8jW-39-fB4" secondAttribute="bottom" id="yTU-hd-wHo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnVerder" destination="N2A-6L-3Nm" id="E8v-Kn-QEr"/>
+                        <outlet property="tbNaam" destination="MKO-4g-HBb" id="3bn-IA-B0K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Osb-lY-8Yn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

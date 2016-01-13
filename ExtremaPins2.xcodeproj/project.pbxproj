@@ -47,6 +47,8 @@
 		F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C501C10493E0052EE01 /* ConnectiePin.swift */; };
 		F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C511C10493E0052EE01 /* DatabaseViewController.swift */; };
 		F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3CAC61C196D5700426E73 /* ShareViewController.swift */; };
+		F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B181C465FE8009B61EB /* LobbyViewController.swift */; };
+		F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B1A1C466241009B61EB /* NaamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		F5678C501C10493E0052EE01 /* ConnectiePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectiePin.swift; sourceTree = "<group>"; };
 		F5678C511C10493E0052EE01 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
 		F5D3CAC61C196D5700426E73 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		F5F70B181C465FE8009B61EB /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		F5F70B1A1C466241009B61EB /* NaamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,8 @@
 				F5D3CAC61C196D5700426E73 /* ShareViewController.swift */,
 				F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */,
 				F5498A231C2BFE2400C44524 /* IntroViewController.swift */,
+				F5F70B181C465FE8009B61EB /* LobbyViewController.swift */,
+				F5F70B1A1C466241009B61EB /* NaamViewController.swift */,
 			);
 			path = ExtremaPins2;
 			sourceTree = "<group>";
@@ -399,7 +405,9 @@
 				F563962F1C1092F0003C3ECF /* JoinViewController.swift in Sources */,
 				F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */,
 				F5678C1E1C1048DD0052EE01 /* ViewController.swift in Sources */,
+				F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */,
 				F5678C551C10493E0052EE01 /* Groep.swift in Sources */,
+				F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */,
 				F5678C1C1C1048DD0052EE01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
