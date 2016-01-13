@@ -72,7 +72,6 @@ class JoinViewController: UIViewController {
                 print("Error in retrieving \(error)")
             }
         */
-        //test voor ronald
         
         
         let Gebruiker = PFObject(className: "Gebruikers")
@@ -89,13 +88,14 @@ class JoinViewController: UIViewController {
             
         }
     }
-    
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "SegueJoin"){
             let svc = segue.destinationViewController as! ShareViewController
             svc.groepsnaamJoin = tbGroepsnaam.text
         }
     }
+*/
 
     /*
     // MARK: - Navigation

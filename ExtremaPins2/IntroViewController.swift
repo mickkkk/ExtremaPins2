@@ -31,19 +31,17 @@ class IntroViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         self.mapView.showsUserLocation = true
         
-        let pinE1 = CLLocationCoordinate2DMake(51.787382,5.433426)
-        
-        let pinE2 = CLLocationCoordinate2DMake(51.787382,5.495224)
-        
-        let pinE3 = CLLocationCoordinate2DMake(51.767840,5.433426)
-        
-        let pinE4 = CLLocationCoordinate2DMake(51.767840,5.495224)
-        
-        let pinE5 = CLLocationCoordinate2DMake(51.732982,5.433426)
-        
-        let pinE6 = CLLocationCoordinate2DMake(51.732982,5.495224)
+        addRoute()
+        /*
         
         
+        */
+
+        // Do any additional setup after loading the view.
+    }
+    
+    func drawShape() {
+        // Create a coordinates array to hold all of the coordinates for our shape.
         let pinX1 = CLLocationCoordinate2DMake(51.423189,5.495911)
         
         let pinX2 = CLLocationCoordinate2DMake(51.808615, 4.699402)
@@ -53,36 +51,6 @@ class IntroViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         let pinX4 = CLLocationCoordinate2DMake(51.812011, 5.457458)
         
         let pinX5 = CLLocationCoordinate2DMake(51.426614,4.617004)
-        
-        let annotationE1 = MKPointAnnotation()
-        annotationE1.coordinate = pinE1
-        annotationE1.title = "Gezet door: Henk"
-        annotationE1.subtitle = "11-08-2016"
-        
-        let annotationE2 = MKPointAnnotation()
-        annotationE2.coordinate = pinE2
-        annotationE2.title = "Gezet door: Frenk"
-        annotationE2.subtitle = "11-08-2016"
-        
-        let annotationE3 = MKPointAnnotation()
-        annotationE3.coordinate = pinE3
-        annotationE3.title = "Gezet door: Lars"
-        annotationE3.subtitle = "11-08-2016"
-        
-        let annotationE4 = MKPointAnnotation()
-        annotationE4.coordinate = pinE4
-        annotationE4.title = "Gezet door: Koos"
-        annotationE4.subtitle = "12-08-2016"
-        
-        let annotationE5 = MKPointAnnotation()
-        annotationE5.coordinate = pinE5
-        annotationE5.title = "Gezet door: Ronald"
-        annotationE5.subtitle = "12-08-2016"
-        
-        let annotationE6 = MKPointAnnotation()
-        annotationE6.coordinate = pinE6
-        annotationE6.title = "Gezet door: Ronald"
-        annotationE6.subtitle = "12-08-2016"
         
         
         
@@ -111,22 +79,37 @@ class IntroViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         annotationX5.title = "Gezet door: Ronald"
         annotationX5.subtitle = "12-08-2016"
         
-        
-        mapView.addAnnotation(annotationE1)
-        mapView.addAnnotation(annotationE2)
-        mapView.addAnnotation(annotationE3)
-        mapView.addAnnotation(annotationE4)
-        mapView.addAnnotation(annotationE5)
-        mapView.addAnnotation(annotationE6)
-        
         mapView.addAnnotation(annotationX1)
         mapView.addAnnotation(annotationX2)
         mapView.addAnnotation(annotationX3)
         mapView.addAnnotation(annotationX4)
         mapView.addAnnotation(annotationX5)
-
-        // Do any additional setup after loading the view.
     }
+    
+
+    func addRoute() {
+        
+        
+        var crdinates:[CLLocationCoordinate2D] = [
+            CLLocationCoordinate2D(latitude: 51.423189, longitude: 5.495911),
+            CLLocationCoordinate2D(latitude: 51.808615, longitude: 4.699402),
+            CLLocationCoordinate2D(latitude: 51.570241, longitude: 5.089417),
+            CLLocationCoordinate2D(latitude: 51.812011, longitude: 5.457458),
+            CLLocationCoordinate2D(latitude: 51.426614, longitude: 4.617004),
+        ]
+        
+        let myPolyline = MKPolyline(coordinates: &crdinates, count: crdinates.count)
+        
+        mapView.addOverlay(myPolyline)
+    }
+    
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+            let lineView = MKPolylineRenderer(overlay: overlay)
+            lineView.strokeColor = UIColor.greenColor()
+            
+            return lineView
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

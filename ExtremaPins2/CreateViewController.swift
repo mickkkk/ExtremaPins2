@@ -58,14 +58,14 @@ class CreateViewController: UIViewController {
         }
         
     }
-    
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "SegueShare"){
             let svc = segue.destinationViewController as! ShareViewController
             svc.groepsnaamCreate = tbGroepsnaam.text
         }
     }
-
+*/
     /*
     // MARK: - Navigation
 
