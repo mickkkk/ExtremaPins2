@@ -19,6 +19,7 @@
 		F5202F4C1C18C46D0097C54A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5202F4B1C18C46D0097C54A /* MapViewController.swift */; };
 		F522098A1C1A2ABD00DD7ACD /* GebruikersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */; };
 		F5498A241C2BFE2400C44524 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5498A231C2BFE2400C44524 /* IntroViewController.swift */; };
+		F55B29161C46CD8C00D4DA02 /* LedenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55B29151C46CD8C00D4DA02 /* LedenViewController.swift */; };
 		F56396131C10825F003C3ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396121C10825F003C3ECF /* Parse.framework */; };
 		F56396151C108269003C3ECF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396141C108269003C3ECF /* Bolts.framework */; };
 		F56396171C10829D003C3ECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396161C10829D003C3ECF /* AudioToolbox.framework */; };
@@ -84,6 +85,7 @@
 		F5202F4B1C18C46D0097C54A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GebruikersViewController.swift; sourceTree = "<group>"; };
 		F5498A231C2BFE2400C44524 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		F55B29151C46CD8C00D4DA02 /* LedenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedenViewController.swift; sourceTree = "<group>"; };
 		F56396121C10825F003C3ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F56396141C108269003C3ECF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F56396161C10829D003C3ECF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -222,6 +224,7 @@
 				F5498A231C2BFE2400C44524 /* IntroViewController.swift */,
 				F5F70B181C465FE8009B61EB /* LobbyViewController.swift */,
 				F5F70B1A1C466241009B61EB /* NaamViewController.swift */,
+				F55B29151C46CD8C00D4DA02 /* LedenViewController.swift */,
 			);
 			path = ExtremaPins2;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				F563962F1C1092F0003C3ECF /* JoinViewController.swift in Sources */,
 				F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */,
 				F5678C1E1C1048DD0052EE01 /* ViewController.swift in Sources */,
+				F55B29161C46CD8C00D4DA02 /* LedenViewController.swift in Sources */,
 				F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */,
 				F5678C551C10493E0052EE01 /* Groep.swift in Sources */,
 				F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */,

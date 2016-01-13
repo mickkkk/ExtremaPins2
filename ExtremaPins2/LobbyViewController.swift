@@ -16,7 +16,6 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var lblLid3: UILabel!
     @IBOutlet weak var lblLid4: UILabel!
     @IBOutlet weak var lblLid5: UILabel!
-    @IBOutlet weak var lblLid6: UILabel!
     
     var naam: String!
     
@@ -26,6 +25,8 @@ class LobbyViewController: UIViewController {
         lblLid1.hidden = true;
         lblLid2.hidden = true;
         lblLid3.hidden = true;
+        lblLid4.hidden = true;
+        lblLid5.hidden = true;
         
         
         
@@ -82,14 +83,6 @@ class LobbyViewController: UIViewController {
                         let lbl5Let = gebruiker.objectForKey("naam")
                         let lbl5String:String = lbl5Let as! String
                         self.lblLid5.text = lbl5String
-                        
-                    }
-                    if(i == 5)
-                    {
-                        self.lblLid6.hidden = false;
-                        let lbl6Let = gebruiker.objectForKey("naam")
-                        let lbl6String:String = lbl6Let as! String
-                        self.lblLid6.text = lbl6String
                         
                     }
                     i = i + 1

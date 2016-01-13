@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import Parse
 
 class NaamViewController: UIViewController {
 
     @IBOutlet weak var tbNaam: UITextField!
     
-    @IBOutlet weak var btnVerder: UIButton!
+    @IBAction func btnVerder(sender: UIButton) {
+        let Gebruiker = PFObject(className: "Gebruikers")
+        Gebruiker["naam"] = tbNaam.text
+        Gebruiker["groepsnaam"] = "groep1"
+        Gebruiker["gestart"] = false
+        
+        // hier schrijf ik de gebruiker weg naar de database als beheerder.
+        Gebruiker.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            //self.lblGroepCreated.hidden = false
+            
+        }
+
+    }
+
     
     
     override func viewDidLoad() {
