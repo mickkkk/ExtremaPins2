@@ -105,7 +105,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sn7-ki-yYp">
                                         <rect key="frame" x="386" y="237" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ReF-9c-Son">
@@ -369,31 +369,31 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lid 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9x-zP-cqc">
                                                 <rect key="frame" x="5" y="64.5" width="37" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lid 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-8S-XbD">
                                                 <rect key="frame" x="5" y="93" width="37" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lid 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkv-a8-ag7">
                                                 <rect key="frame" x="5" y="121.5" width="37" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lid 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGi-Cc-Vgx">
                                                 <rect key="frame" x="5" y="150" width="37" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lid 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-yD-dHJ">
                                                 <rect key="frame" x="5" y="178.5" width="37" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -477,45 +477,59 @@
                                 <rect key="frame" x="0.0" y="0.0" width="605" height="479"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK5-6B-nAz">
-                                <rect key="frame" x="0.0" y="555" width="505" height="45"/>
+                                <rect key="frame" x="79" y="555" width="426" height="45"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8lg-nQ-Q0d"/>
+                                    <constraint firstAttribute="height" constant="50" id="Fcf-pb-AG0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
                                 <state key="normal" title="Zet pin!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnZetPin:" destination="7zI-2J-ez9" eventType="touchUpInside" id="IdY-Ol-vGU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhv-mc-Tsf">
                                 <rect key="frame" x="508" y="558" width="92" height="42"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="HXU-Vr-Rzs"/>
-                                    <constraint firstAttribute="height" constant="50" id="aPG-oN-ppa"/>
+                                    <constraint firstAttribute="height" constant="50" id="Tq1-qE-bps"/>
+                                    <constraint firstAttribute="width" constant="100" id="c8h-1x-6w1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
                                 <state key="normal" title="&gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnLeden:" destination="7zI-2J-ez9" eventType="touchUpInside" id="H1Y-sD-38p"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fS3-jR-OIa">
+                                <rect key="frame" x="0.0" y="555" width="71" height="45"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JpA-GD-1Ao"/>
+                                    <constraint firstAttribute="height" constant="50" id="MHV-XB-IOz"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="WK5-6B-nAz" secondAttribute="bottom" id="3ry-Q1-TSP"/>
-                            <constraint firstAttribute="trailing" secondItem="Dhv-mc-Tsf" secondAttribute="trailing" id="6Ew-gh-WNj"/>
-                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="Dhv-mc-Tsf" secondAttribute="bottom" id="6TI-sW-L08"/>
-                            <constraint firstAttribute="trailing" secondItem="yzF-jn-O3q" secondAttribute="trailing" id="A15-dR-6hm"/>
-                            <constraint firstItem="Dhv-mc-Tsf" firstAttribute="leading" secondItem="WK5-6B-nAz" secondAttribute="trailing" id="Fwm-6Q-bDg"/>
-                            <constraint firstItem="WK5-6B-nAz" firstAttribute="leading" secondItem="3K8-2t-4iK" secondAttribute="leading" id="PeZ-Pm-MOW"/>
-                            <constraint firstItem="WK5-6B-nAz" firstAttribute="top" secondItem="yzF-jn-O3q" secondAttribute="bottom" id="fvu-oe-rxU"/>
-                            <constraint firstItem="yzF-jn-O3q" firstAttribute="top" secondItem="3K8-2t-4iK" secondAttribute="top" id="taq-hA-3fA"/>
-                            <constraint firstItem="yzF-jn-O3q" firstAttribute="leading" secondItem="3K8-2t-4iK" secondAttribute="leading" id="zcT-tt-phT"/>
+                            <constraint firstItem="fS3-jR-OIa" firstAttribute="leading" secondItem="3K8-2t-4iK" secondAttribute="leading" id="BoQ-so-pPg"/>
+                            <constraint firstAttribute="trailing" secondItem="Dhv-mc-Tsf" secondAttribute="trailing" id="CR1-LA-UXj"/>
+                            <constraint firstItem="fS3-jR-OIa" firstAttribute="top" secondItem="yzF-jn-O3q" secondAttribute="bottom" id="IaB-Zd-Go6"/>
+                            <constraint firstItem="Dhv-mc-Tsf" firstAttribute="leading" secondItem="WK5-6B-nAz" secondAttribute="trailing" id="NId-IM-fZP"/>
+                            <constraint firstItem="WK5-6B-nAz" firstAttribute="leading" secondItem="fS3-jR-OIa" secondAttribute="trailing" id="ObA-50-HIP"/>
+                            <constraint firstItem="yzF-jn-O3q" firstAttribute="leading" secondItem="3K8-2t-4iK" secondAttribute="leading" id="QdZ-DJ-gHk"/>
+                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="WK5-6B-nAz" secondAttribute="bottom" id="R2L-eH-cbf"/>
+                            <constraint firstItem="yzF-jn-O3q" firstAttribute="top" secondItem="3K8-2t-4iK" secondAttribute="top" id="aFl-EN-sQe"/>
+                            <constraint firstAttribute="trailing" secondItem="yzF-jn-O3q" secondAttribute="trailing" id="apF-ve-tMP"/>
+                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="Dhv-mc-Tsf" secondAttribute="bottom" id="ddk-gE-sD7"/>
+                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="fS3-jR-OIa" secondAttribute="bottom" id="nUL-3C-CMS"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnLeden" destination="Dhv-mc-Tsf" id="DJT-2o-bJu"/>
-                        <outlet property="btnZetPin" destination="WK5-6B-nAz" id="Fag-J2-zOd"/>
                         <outlet property="mapView" destination="yzF-jn-O3q" id="AjP-cx-LmI"/>
                     </connections>
                 </viewController>
