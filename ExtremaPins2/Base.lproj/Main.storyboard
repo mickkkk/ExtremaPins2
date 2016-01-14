@@ -131,14 +131,14 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="nEL-vn-7xq" firstAttribute="top" secondItem="X0I-my-XoE" secondAttribute="bottom" constant="10" id="8Fz-wY-u6o"/>
+                                            <constraint firstItem="nEL-vn-7xq" firstAttribute="top" secondItem="X0I-my-XoE" secondAttribute="bottom" constant="5" id="8Fz-wY-u6o"/>
                                             <constraint firstItem="X0I-my-XoE" firstAttribute="centerX" secondItem="ReF-9c-Son" secondAttribute="centerX" id="Nc1-ZW-DIY"/>
-                                            <constraint firstItem="nEL-vn-7xq" firstAttribute="top" secondItem="X0I-my-XoE" secondAttribute="bottom" constant="10" id="Z7F-Qw-ThS"/>
-                                            <constraint firstItem="hns-7V-8db" firstAttribute="top" secondItem="nEL-vn-7xq" secondAttribute="bottom" constant="10" id="fVD-Kq-JeU"/>
+                                            <constraint firstItem="nEL-vn-7xq" firstAttribute="top" secondItem="X0I-my-XoE" secondAttribute="bottom" constant="5" id="Z7F-Qw-ThS"/>
+                                            <constraint firstItem="hns-7V-8db" firstAttribute="top" secondItem="nEL-vn-7xq" secondAttribute="bottom" constant="5" id="fVD-Kq-JeU"/>
                                             <constraint firstItem="X0I-my-XoE" firstAttribute="top" secondItem="ReF-9c-Son" secondAttribute="top" constant="20" id="fXY-0v-BK4"/>
                                             <constraint firstItem="nEL-vn-7xq" firstAttribute="centerX" secondItem="ReF-9c-Son" secondAttribute="centerX" id="mHp-tp-lDm"/>
                                             <constraint firstItem="hns-7V-8db" firstAttribute="centerX" secondItem="ReF-9c-Son" secondAttribute="centerX" id="tiE-ud-gFC"/>
-                                            <constraint firstItem="hns-7V-8db" firstAttribute="top" secondItem="nEL-vn-7xq" secondAttribute="bottom" constant="10" id="u7k-gj-fdJ"/>
+                                            <constraint firstItem="hns-7V-8db" firstAttribute="top" secondItem="nEL-vn-7xq" secondAttribute="bottom" constant="5" id="u7k-gj-fdJ"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbZ-gW-FpM">
@@ -418,7 +418,7 @@
                         <outlet property="ivGestart1" destination="L9o-jJ-XK7" id="yFn-KQ-JC7"/>
                         <outlet property="ivGestart2" destination="xJb-LC-qfe" id="UR7-T8-bO9"/>
                         <outlet property="ivGestart3" destination="2XT-oe-HuF" id="11M-JR-AaO"/>
-                        <outlet property="ivGestart4" destination="hen-Fx-2Cc" id="TKZ-MF-bNG"/>
+                        <outlet property="ivGestart4" destination="hen-Fx-2Cc" id="nCo-oe-nlc"/>
                         <outlet property="lblLid1" destination="ZPS-cM-Bkr" id="f0R-kx-sMY"/>
                         <outlet property="lblLid2" destination="H9x-zP-cqc" id="czc-n7-50H"/>
                         <outlet property="lblLid3" destination="CMC-8S-XbD" id="A1s-a1-wRV"/>
