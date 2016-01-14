@@ -23,6 +23,37 @@ class LobbyViewController: UIViewController {
     
     
     @IBAction func btnStart(sender: UIButton) {
+        
+        let query = PFQuery(className:"Gebruikers")
+        query.whereKey("naam", equalTo: self.naam)
+        query.findObjectsInBackgroundWithBlock {(NSArray gebruikers, NSError error) -> Void in
+            
+            if error == nil
+            {
+                for gebruiker in gebruikers!
+                {
+                    
+                    query.getObjectInBackgroundWithId(gebruiker.objectId!)
+                    {
+                        (gebruiker : PFObject?, error: NSError?) -> Void in
+                        if error != nil
+                        {
+                            print(error)
+                        } else if let gebruiker = gebruiker
+                        {
+                            gebruiker["naam"] = self.naam
+                            gebruiker["groep"] = "groep1"
+                            gebruiker["gestart"] = true
+                            gebruiker.saveInBackground()
+                        }
+                        
+                        //print(object.objectId)
+                    }
+                }
+            } else{
+                print("Error in retrieving \(error)")
+            }
+        }
     }
     
     var naam: String!

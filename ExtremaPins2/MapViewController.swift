@@ -14,23 +14,71 @@ import Parse
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
+    @IBOutlet weak var mapView: MKMapView!
+    var groepsnaam: String!
    
     @IBAction func btnZetPin(sender: UIButton) {
-        let pin5 = CLLocationCoordinate2DMake(51.449501,5.479442)
+        let query = PFQuery(className:"Gebruikers")
+        query.whereKey("groepsnaam", equalTo: "groep1")
+        query.countObjectsInBackgroundWithBlock {(count :Int32, NSError error) -> Void in
+            
+            if error == nil
+            {
+                if(count == 1)
+                {
+                    let pin1 = CLLocationCoordinate2DMake(51.431905,5.454524)
+                    let annotation1 = MKPointAnnotation()
+                    annotation1.coordinate = pin1
+                    annotation1.title = "Title 1"
+                    annotation1.subtitle = "Subtitle 1"
+                    self.mapView.addAnnotation(annotation1)
+                }
+                if(count == 2)
+                {
+                    let pin2 = CLLocationCoordinate2DMake(51.430347, 5.502702)
+                    let annotation2 = MKPointAnnotation()
+                    annotation2.coordinate = pin2
+                    annotation2.title = "Title 2"
+                    annotation2.subtitle = "Subtitle 2"
+                    self.mapView.addAnnotation(annotation2)
+                }
+                if(count == 3)
+                {
+                    let pin3 = CLLocationCoordinate2DMake(51.462372, 5.460132)
+                    let annotation3 = MKPointAnnotation()
+                    annotation3.coordinate = pin3
+                    annotation3.title = "Title1 3"
+                    annotation3.subtitle = "Subtitle3"
+                    self.mapView.addAnnotation(annotation3)
+                }
+                
+                if(count == 4)
+                {
+                    let pin4 = CLLocationCoordinate2DMake(51.456226, 5.516220)
+                    let annotation4 = MKPointAnnotation()
+                    annotation4.coordinate = pin4
+                    annotation4.title = "Title 4"
+                    annotation4.subtitle = "Subtitle 4"
+                    self.mapView.addAnnotation(annotation4)
+                }
+                if(count == 5)
+                {
+                    let pin5 = CLLocationCoordinate2DMake(51.449501,5.479442)
+                    let annotation5 = MKPointAnnotation()
+                    annotation5.coordinate = pin5
+                    annotation5.title = "Title 5"
+                    annotation5.subtitle = "Subtitle 5"
+                    self.mapView.addAnnotation(annotation5)
+                }
+            }
         
-        let annotation5 = MKPointAnnotation()
-        annotation5.coordinate = pin5
-        annotation5.title = "Title 5"
-        annotation5.subtitle = "Subtitle 5"
-        
-        mapView.addAnnotation(annotation5)
+        }
     }
     
     @IBAction func btnLeden(sender: UIButton) {
     }
     
-    @IBOutlet weak var mapView: MKMapView!
-    var groepsnaam: String!
+    
 
     
     
@@ -49,14 +97,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         let huidigeLocatie = CLLocationCoordinate2DMake(51.449501,5.479442)
         
-        let pin1 = CLLocationCoordinate2DMake(51.431905,5.454524)
-        
-        let pin2 = CLLocationCoordinate2DMake(51.430347, 5.502702)
-        
-        let pin3 = CLLocationCoordinate2DMake(51.462372, 5.460132)
-        
-        let pin4 = CLLocationCoordinate2DMake(51.456226, 5.516220)
-        
         let span = MKCoordinateSpanMake(0.08, 0.08)
         
         let region = MKCoordinateRegion(center: huidigeLocatie, span: span)
@@ -64,30 +104,100 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.setRegion(region, animated: true)
         
         
-        let annotation1 = MKPointAnnotation()
-        annotation1.coordinate = pin1
-        annotation1.title = "Title 1"
-        annotation1.subtitle = "Subtitle 1"
-        
-        let annotation2 = MKPointAnnotation()
-        annotation2.coordinate = pin2
-        annotation2.title = "Title 2"
-        annotation2.subtitle = "Subtitle 2"
-        
-        let annotation3 = MKPointAnnotation()
-        annotation3.coordinate = pin3
-        annotation3.title = "Title1 3"
-        annotation3.subtitle = "Subtitle3"
-        
-        let annotation4 = MKPointAnnotation()
-        annotation4.coordinate = pin4
-        annotation4.title = "Title 4"
-        annotation4.subtitle = "Subtitle 4"
-        
-        mapView.addAnnotation(annotation1)
-        mapView.addAnnotation(annotation2)
-        mapView.addAnnotation(annotation3)
-        mapView.addAnnotation(annotation4)
+        let query = PFQuery(className:"Gebruikers")
+        query.whereKey("groepsnaam", equalTo: "groep1")
+        query.countObjectsInBackgroundWithBlock {(count :Int32, NSError error) -> Void in
+            
+            if error == nil
+            {
+                if(count == 2)
+                {
+                    let pin1 = CLLocationCoordinate2DMake(51.431905,5.454524)
+                    let annotation1 = MKPointAnnotation()
+                    annotation1.coordinate = pin1
+                    annotation1.title = "Title 1"
+                    annotation1.subtitle = "Subtitle 1"
+                    self.mapView.addAnnotation(annotation1)
+                }
+                if(count == 3)
+                {
+                    let pin1 = CLLocationCoordinate2DMake(51.431905,5.454524)
+                    let annotation1 = MKPointAnnotation()
+                    annotation1.coordinate = pin1
+                    annotation1.title = "Title 1"
+                    annotation1.subtitle = "Subtitle 1"
+                    self.mapView.addAnnotation(annotation1)
+                    
+                    let pin2 = CLLocationCoordinate2DMake(51.430347, 5.502702)
+                    let annotation2 = MKPointAnnotation()
+                    annotation2.coordinate = pin2
+                    annotation2.title = "Title 2"
+                    annotation2.subtitle = "Subtitle 2"
+                    self.mapView.addAnnotation(annotation2)
+                }
+                
+                if(count == 4)
+                {
+                    if(count == 1)
+                    {
+                        let pin1 = CLLocationCoordinate2DMake(51.431905,5.454524)
+                        let annotation1 = MKPointAnnotation()
+                        annotation1.coordinate = pin1
+                        annotation1.title = "Title 1"
+                        annotation1.subtitle = "Subtitle 1"
+                        self.mapView.addAnnotation(annotation1)
+                    }
+                    if(count == 2)
+                    {
+                        let pin2 = CLLocationCoordinate2DMake(51.430347, 5.502702)
+                        let annotation2 = MKPointAnnotation()
+                        annotation2.coordinate = pin2
+                        annotation2.title = "Title 2"
+                        annotation2.subtitle = "Subtitle 2"
+                        self.mapView.addAnnotation(annotation2)
+                    }
+                    if(count == 3)
+                    {
+                        let pin3 = CLLocationCoordinate2DMake(51.462372, 5.460132)
+                        let annotation3 = MKPointAnnotation()
+                        annotation3.coordinate = pin3
+                        annotation3.title = "Title1 3"
+                        annotation3.subtitle = "Subtitle3"
+                        self.mapView.addAnnotation(annotation3)
+                    }
+                }
+                if(count == 5)
+                {
+                    let pin1 = CLLocationCoordinate2DMake(51.431905,5.454524)
+                    let annotation1 = MKPointAnnotation()
+                    annotation1.coordinate = pin1
+                    annotation1.title = "Title 1"
+                    annotation1.subtitle = "Subtitle 1"
+                    self.mapView.addAnnotation(annotation1)
+                    
+                    let pin2 = CLLocationCoordinate2DMake(51.430347, 5.502702)
+                    let annotation2 = MKPointAnnotation()
+                    annotation2.coordinate = pin2
+                    annotation2.title = "Title 2"
+                    annotation2.subtitle = "Subtitle 2"
+                    self.mapView.addAnnotation(annotation2)
+                    
+                    let pin3 = CLLocationCoordinate2DMake(51.462372, 5.460132)
+                    let annotation3 = MKPointAnnotation()
+                    annotation3.coordinate = pin3
+                    annotation3.title = "Title1 3"
+                    annotation3.subtitle = "Subtitle3"
+                    self.mapView.addAnnotation(annotation3)
+                    
+                    let pin4 = CLLocationCoordinate2DMake(51.456226, 5.516220)
+                    let annotation4 = MKPointAnnotation()
+                    annotation4.coordinate = pin4
+                    annotation4.title = "Title 4"
+                    annotation4.subtitle = "Subtitle 4"
+                    self.mapView.addAnnotation(annotation4)
+                }
+            }
+
         
         
         //self.mapView.showsUserLocation = true
@@ -111,6 +221,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
 
         // Do any additional setup after loading the view.
+        }
     }
 
     override func didReceiveMemoryWarning() {
