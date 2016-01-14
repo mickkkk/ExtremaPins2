@@ -17,7 +17,6 @@
 		F51DD1F91C199B3300E26E5B /* bottom_leftDEF.png in Resources */ = {isa = PBXBuildFile; fileRef = F51DD1F81C199B3300E26E5B /* bottom_leftDEF.png */; };
 		F5202F4A1C18C2760097C54A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5202F491C18C2760097C54A /* MapKit.framework */; };
 		F5202F4C1C18C46D0097C54A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5202F4B1C18C46D0097C54A /* MapViewController.swift */; };
-		F522098A1C1A2ABD00DD7ACD /* GebruikersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */; };
 		F5498A241C2BFE2400C44524 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5498A231C2BFE2400C44524 /* IntroViewController.swift */; };
 		F55B29161C46CD8C00D4DA02 /* LedenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55B29151C46CD8C00D4DA02 /* LedenViewController.swift */; };
 		F56396131C10825F003C3ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396121C10825F003C3ECF /* Parse.framework */; };
@@ -34,21 +33,13 @@
 		F56396291C10830C003C3ECF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F56396281C10830C003C3ECF /* libsqlite3.tbd */; };
 		F563962B1C108320003C3ECF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563962A1C108320003C3ECF /* Accounts.framework */; };
 		F563962D1C108327003C3ECF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563962C1C108327003C3ECF /* Social.framework */; };
-		F563962F1C1092F0003C3ECF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563962E1C1092F0003C3ECF /* JoinViewController.swift */; };
-		F56396311C1097B6003C3ECF /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56396301C1097B6003C3ECF /* CreateViewController.swift */; };
 		F5678C1C1C1048DD0052EE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C1B1C1048DD0052EE01 /* AppDelegate.swift */; };
 		F5678C1E1C1048DD0052EE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C1D1C1048DD0052EE01 /* ViewController.swift */; };
 		F5678C211C1048DD0052EE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5678C1F1C1048DD0052EE01 /* Main.storyboard */; };
 		F5678C291C1048DD0052EE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5678C271C1048DD0052EE01 /* LaunchScreen.storyboard */; };
 		F5678C341C1048DD0052EE01 /* ExtremaPins2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C331C1048DD0052EE01 /* ExtremaPins2Tests.swift */; };
 		F5678C3F1C1048DD0052EE01 /* ExtremaPins2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C3E1C1048DD0052EE01 /* ExtremaPins2UITests.swift */; };
-		F5678C531C10493E0052EE01 /* Gebruiker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4D1C10493E0052EE01 /* Gebruiker.swift */; };
-		F5678C541C10493E0052EE01 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4E1C10493E0052EE01 /* Pin.swift */; };
-		F5678C551C10493E0052EE01 /* Groep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4F1C10493E0052EE01 /* Groep.swift */; };
-		F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C501C10493E0052EE01 /* ConnectiePin.swift */; };
-		F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C511C10493E0052EE01 /* DatabaseViewController.swift */; };
 		F5D3C58B1C47DEF200192066 /* GroepsledenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3C58A1C47DEF200192066 /* GroepsledenTableViewController.swift */; };
-		F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3CAC61C196D5700426E73 /* ShareViewController.swift */; };
 		F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B181C465FE8009B61EB /* LobbyViewController.swift */; };
 		F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B1A1C466241009B61EB /* NaamViewController.swift */; };
 		F5F70B1F1C467E30009B61EB /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F70B1C1C467E30009B61EB /* facebook.png */; };
@@ -84,7 +75,6 @@
 		F51DD1F81C199B3300E26E5B /* bottom_leftDEF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_leftDEF.png; sourceTree = "<group>"; };
 		F5202F491C18C2760097C54A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5202F4B1C18C46D0097C54A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GebruikersViewController.swift; sourceTree = "<group>"; };
 		F5498A231C2BFE2400C44524 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F55B29151C46CD8C00D4DA02 /* LedenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedenViewController.swift; sourceTree = "<group>"; };
 		F56396121C10825F003C3ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -101,8 +91,6 @@
 		F56396281C10830C003C3ECF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F563962A1C108320003C3ECF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F563962C1C108327003C3ECF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		F563962E1C1092F0003C3ECF /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
-		F56396301C1097B6003C3ECF /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		F5678C181C1048DD0052EE01 /* ExtremaPins2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtremaPins2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5678C1B1C1048DD0052EE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5678C1D1C1048DD0052EE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,13 +103,7 @@
 		F5678C3A1C1048DD0052EE01 /* ExtremaPins2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtremaPins2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5678C3E1C1048DD0052EE01 /* ExtremaPins2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtremaPins2UITests.swift; sourceTree = "<group>"; };
 		F5678C401C1048DD0052EE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5678C4D1C10493E0052EE01 /* Gebruiker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gebruiker.swift; sourceTree = "<group>"; };
-		F5678C4E1C10493E0052EE01 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
-		F5678C4F1C10493E0052EE01 /* Groep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Groep.swift; sourceTree = "<group>"; };
-		F5678C501C10493E0052EE01 /* ConnectiePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectiePin.swift; sourceTree = "<group>"; };
-		F5678C511C10493E0052EE01 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
 		F5D3C58A1C47DEF200192066 /* GroepsledenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroepsledenTableViewController.swift; sourceTree = "<group>"; };
-		F5D3CAC61C196D5700426E73 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		F5F70B181C465FE8009B61EB /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		F5F70B1A1C466241009B61EB /* NaamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaamViewController.swift; sourceTree = "<group>"; };
 		F5F70B1C1C467E30009B61EB /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -213,16 +195,7 @@
 				F5678C1F1C1048DD0052EE01 /* Main.storyboard */,
 				F5678C271C1048DD0052EE01 /* LaunchScreen.storyboard */,
 				F5678C2A1C1048DD0052EE01 /* Info.plist */,
-				F5678C4D1C10493E0052EE01 /* Gebruiker.swift */,
-				F5678C4E1C10493E0052EE01 /* Pin.swift */,
-				F5678C4F1C10493E0052EE01 /* Groep.swift */,
-				F5678C501C10493E0052EE01 /* ConnectiePin.swift */,
-				F5678C511C10493E0052EE01 /* DatabaseViewController.swift */,
-				F563962E1C1092F0003C3ECF /* JoinViewController.swift */,
-				F56396301C1097B6003C3ECF /* CreateViewController.swift */,
 				F5202F4B1C18C46D0097C54A /* MapViewController.swift */,
-				F5D3CAC61C196D5700426E73 /* ShareViewController.swift */,
-				F52209891C1A2ABD00DD7ACD /* GebruikersViewController.swift */,
 				F5498A231C2BFE2400C44524 /* IntroViewController.swift */,
 				F5F70B181C465FE8009B61EB /* LobbyViewController.swift */,
 				F5F70B1A1C466241009B61EB /* NaamViewController.swift */,
@@ -412,20 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */,
 				F5498A241C2BFE2400C44524 /* IntroViewController.swift in Sources */,
-				F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */,
-				F5678C531C10493E0052EE01 /* Gebruiker.swift in Sources */,
-				F56396311C1097B6003C3ECF /* CreateViewController.swift in Sources */,
-				F522098A1C1A2ABD00DD7ACD /* GebruikersViewController.swift in Sources */,
 				F5202F4C1C18C46D0097C54A /* MapViewController.swift in Sources */,
-				F5678C541C10493E0052EE01 /* Pin.swift in Sources */,
-				F563962F1C1092F0003C3ECF /* JoinViewController.swift in Sources */,
-				F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */,
 				F5678C1E1C1048DD0052EE01 /* ViewController.swift in Sources */,
 				F55B29161C46CD8C00D4DA02 /* LedenViewController.swift in Sources */,
 				F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */,
-				F5678C551C10493E0052EE01 /* Groep.swift in Sources */,
 				F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */,
 				F5D3C58B1C47DEF200192066 /* GroepsledenTableViewController.swift in Sources */,
 				F5678C1C1C1048DD0052EE01 /* AppDelegate.swift in Sources */,

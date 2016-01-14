@@ -21,6 +21,11 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var ivGestart3: UIImageView!
     @IBOutlet weak var ivGestart4: UIImageView!
     
+    @IBOutlet weak var btnGoToMap: UIButton!
+    @IBAction func btnGoToMap(sender: UIButton) {
+    }
+    
+    
     
     @IBAction func btnStart(sender: UIButton) {
         
@@ -32,7 +37,6 @@ class LobbyViewController: UIViewController {
             {
                 for gebruiker in gebruikers!
                 {
-                    
                     query.getObjectInBackgroundWithId(gebruiker.objectId!)
                     {
                         (gebruiker : PFObject?, error: NSError?) -> Void in
@@ -53,6 +57,7 @@ class LobbyViewController: UIViewController {
             } else{
                 print("Error in retrieving \(error)")
             }
+            self.viewDidLoad()
         }
     }
     
@@ -62,7 +67,7 @@ class LobbyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnGoToMap.hidden = true;
         ivGestart1.hidden = true;
         ivGestart2.hidden = true;
         ivGestart3.hidden = true;
@@ -72,8 +77,30 @@ class LobbyViewController: UIViewController {
         lblLid3.hidden = true;
         lblLid4.hidden = true;
         lblLid5.hidden = true;
-        
-        
+        /*
+        let query1 = PFQuery(className: "Gebruikers")
+        query1.whereKey("groepsnaam", equalTo: "groep1")
+        query1.countObjectsInBackgroundWithBlock {(countTotaal :Int32, NSError error) -> Void in
+            
+            if error == nil
+            {
+                let query2 = PFQuery(className: "Gebruikers")
+                query2.whereKey("gestart", equalTo: true)
+                query2.countObjectsInBackgroundWithBlock {(countGestart :Int32, NSError error) -> Void in
+                    if error == nil{
+                        var percentage :Int32 = round((4/5)*100
+                        if(percentage > 74)
+                        {
+                            self.btnGoToMap.hidden = false;
+                        }
+                    }else{
+                        print("Error in retrieving \(error)")
+                    }
+                }
+            }
+        }
+        */
+
         
         let query = PFQuery(className:"Gebruikers")
         query.whereKey("groepsnaam", equalTo: "groep1")
