@@ -47,6 +47,7 @@
 		F5678C551C10493E0052EE01 /* Groep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C4F1C10493E0052EE01 /* Groep.swift */; };
 		F5678C561C10493E0052EE01 /* ConnectiePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C501C10493E0052EE01 /* ConnectiePin.swift */; };
 		F5678C571C10493E0052EE01 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5678C511C10493E0052EE01 /* DatabaseViewController.swift */; };
+		F5D3C58B1C47DEF200192066 /* GroepsledenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3C58A1C47DEF200192066 /* GroepsledenTableViewController.swift */; };
 		F5D3CAC71C196D5700426E73 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3CAC61C196D5700426E73 /* ShareViewController.swift */; };
 		F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B181C465FE8009B61EB /* LobbyViewController.swift */; };
 		F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B1A1C466241009B61EB /* NaamViewController.swift */; };
@@ -119,6 +120,7 @@
 		F5678C4F1C10493E0052EE01 /* Groep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Groep.swift; sourceTree = "<group>"; };
 		F5678C501C10493E0052EE01 /* ConnectiePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectiePin.swift; sourceTree = "<group>"; };
 		F5678C511C10493E0052EE01 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
+		F5D3C58A1C47DEF200192066 /* GroepsledenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroepsledenTableViewController.swift; sourceTree = "<group>"; };
 		F5D3CAC61C196D5700426E73 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		F5F70B181C465FE8009B61EB /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		F5F70B1A1C466241009B61EB /* NaamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaamViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				F5F70B181C465FE8009B61EB /* LobbyViewController.swift */,
 				F5F70B1A1C466241009B61EB /* NaamViewController.swift */,
 				F55B29151C46CD8C00D4DA02 /* LedenViewController.swift */,
+				F5D3C58A1C47DEF200192066 /* GroepsledenTableViewController.swift */,
 			);
 			path = ExtremaPins2;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */,
 				F5678C551C10493E0052EE01 /* Groep.swift in Sources */,
 				F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */,
+				F5D3C58B1C47DEF200192066 /* GroepsledenTableViewController.swift in Sources */,
 				F5678C1C1C1048DD0052EE01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
