@@ -16,13 +16,26 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var lblLid3: UILabel!
     @IBOutlet weak var lblLid4: UILabel!
     @IBOutlet weak var lblLid5: UILabel!
+    @IBOutlet weak var ivGestart1: UIImageView!
+    @IBOutlet weak var ivGestart2: UIImageView!
+    @IBOutlet weak var ivGestart3: UIImageView!
+    @IBOutlet weak var ivGestart4: UIImageView!
+    
+    
+    @IBAction func btnStart(sender: UIButton) {
+    }
     
     var naam: String!
     var array: NSArray!
+    var arr:NSArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ivGestart1.hidden = true;
+        ivGestart2.hidden = true;
+        ivGestart3.hidden = true;
+        ivGestart4.hidden = true;
         lblLid1.hidden = true;
         lblLid2.hidden = true;
         lblLid3.hidden = true;
@@ -38,59 +51,96 @@ class LobbyViewController: UIViewController {
             //(gebruikers:[AnyObject]?, error: NSError) -> Void in
             var i = 0
             if error == nil {
-                for gebruiker in gebruikers!{
+                for gebruiker in gebruikers!
+                {
                     self.array = gebruikers!
-                    var arr:NSArray = self.array.reverseObjectEnumerator().allObjects
-                    
-                    for a in arr{
-                    if(i == 0)
+                    self.arr = self.array.reverseObjectEnumerator().allObjects
+                    }
+                    for a in self.arr
                     {
-                        self.lblLid1.hidden = false;
-                        let lbl1Let = a.objectForKey("naam")
-                        let lbl1String:String = lbl1Let as! String
-                        self.lblLid1.text = lbl1String
-                        /*
-                        if(self.lblLid1.isEqual(self.naam))
+                        if(i == 0)
                         {
-                            self.lblLid2.textColor = UIColor.redColor()
-                            //self.lblLid1.textColor = UIColor(red: 1.0, green: 0.000, blue: 0.0, alpha: 1.0)
+                            self.lblLid1.hidden = false;
+                            let lbl1Let = a.objectForKey("naam")
+                            let lbl1String:String = lbl1Let as! String
+                            self.lblLid1.text = lbl1String
+                            /*
+                            if(self.lblLid1.isEqual(self.naam))
+                            {
+                                self.lblLid2.textColor = UIColor.redColor()
+                                //self.lblLid1.textColor = UIColor(red: 1.0, green: 0.000, blue: 0.0, alpha: 1.0)
+                            }
+                            */
                         }
-                        */
-                    }
-                    if(i == 1)
-                    {
-                        self.lblLid2.hidden = false;
-                        let lbl2Let = a.objectForKey("naam")
-                        let lbl2String:String = lbl2Let as! String
-                        self.lblLid2.text = lbl2String
-                        
-                    }
-                    if(i == 2)
-                    {
-                        self.lblLid3.hidden = false;
-                        let lbl3Let = a.objectForKey("naam")
-                        let lbl3String:String = lbl3Let as! String
-                        self.lblLid3.text = lbl3String
-                        
-                    }
-                    if(i == 3)
-                    {
-                        self.lblLid4.hidden = false;
-                        let lbl4Let = a.objectForKey("naam")
-                        let lbl4String:String = lbl4Let as! String
-                        self.lblLid4.text = lbl4String
-                        
-                    }
-                    if(i == 4)
-                    {
-                        self.lblLid5.hidden = false;
-                        let lbl5Let = a.objectForKey("naam")
-                        let lbl5String:String = lbl5Let as! String
-                        self.lblLid5.text = lbl5String
-                        
-                    }
-                    i = i + 1
-                    }
+                        if(i == 1)
+                        {
+                            self.lblLid2.hidden = false;
+                            let lbl2Let = a.objectForKey("naam")
+                            let lbl2String:String = lbl2Let as! String
+                            self.lblLid2.text = lbl2String
+                            self.ivGestart1.hidden = false;
+                            let gestart:Bool = a.objectForKey("gestart") as! Bool
+                            if(gestart == true)
+                            {
+                                self.ivGestart1.backgroundColor = UIColor.greenColor()
+                            }
+                            else
+                            {
+                                self.ivGestart1.backgroundColor = UIColor.redColor()
+                            }
+                        }
+                        if(i == 2)
+                        {
+                            self.lblLid3.hidden = false;
+                            let lbl3Let = a.objectForKey("naam")
+                            let lbl3String:String = lbl3Let as! String
+                            self.lblLid3.text = lbl3String
+                            self.ivGestart2.hidden = false;
+                            let gestart:Bool = a.objectForKey("gestart") as! Bool
+                            if(gestart == true)
+                            {
+                                self.ivGestart2.backgroundColor = UIColor.greenColor()
+                            }
+                            else
+                            {
+                                self.ivGestart2.backgroundColor = UIColor.redColor()
+                            }
+                        }
+                        if(i == 3)
+                        {
+                            self.lblLid4.hidden = false;
+                            let lbl4Let = a.objectForKey("naam")
+                            let lbl4String:String = lbl4Let as! String
+                            self.lblLid4.text = lbl4String
+                            self.ivGestart3.hidden = false;
+                            let gestart:Bool = a.objectForKey("gestart") as! Bool
+                            if(gestart == true)
+                            {
+                                self.ivGestart3.backgroundColor = UIColor.greenColor()
+                            }
+                            else
+                            {
+                                self.ivGestart3.backgroundColor = UIColor.redColor()
+                            }
+                        }
+                        if(i == 4)
+                        {
+                            self.lblLid5.hidden = false;
+                            let lbl5Let = a.objectForKey("naam")
+                            let lbl5String:String = lbl5Let as! String
+                            self.lblLid5.text = lbl5String
+                            self.ivGestart4.hidden = false;
+                            let gestart:Bool = a.objectForKey("gestart") as! Bool
+                            if(gestart == true)
+                            {
+                                self.ivGestart4.backgroundColor = UIColor.greenColor()
+                            }
+                            else
+                            {
+                                self.ivGestart4.backgroundColor = UIColor.redColor()
+                            }
+                        }
+                        i = i + 1
                 }
                 
             }
