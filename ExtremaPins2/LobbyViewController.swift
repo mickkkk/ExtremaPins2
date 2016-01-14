@@ -18,6 +18,7 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var lblLid5: UILabel!
     
     var naam: String!
+    var array: NSArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +39,14 @@ class LobbyViewController: UIViewController {
             var i = 0
             if error == nil {
                 for gebruiker in gebruikers!{
+                    self.array = gebruikers!
+                    var arr:NSArray = self.array.reverseObjectEnumerator().allObjects
                     
+                    for a in arr{
                     if(i == 0)
                     {
                         self.lblLid1.hidden = false;
-                        let lbl1Let = gebruiker.objectForKey("naam")
+                        let lbl1Let = a.objectForKey("naam")
                         let lbl1String:String = lbl1Let as! String
                         self.lblLid1.text = lbl1String
                         /*
@@ -56,7 +60,7 @@ class LobbyViewController: UIViewController {
                     if(i == 1)
                     {
                         self.lblLid2.hidden = false;
-                        let lbl2Let = gebruiker.objectForKey("naam")
+                        let lbl2Let = a.objectForKey("naam")
                         let lbl2String:String = lbl2Let as! String
                         self.lblLid2.text = lbl2String
                         
@@ -64,7 +68,7 @@ class LobbyViewController: UIViewController {
                     if(i == 2)
                     {
                         self.lblLid3.hidden = false;
-                        let lbl3Let = gebruiker.objectForKey("naam")
+                        let lbl3Let = a.objectForKey("naam")
                         let lbl3String:String = lbl3Let as! String
                         self.lblLid3.text = lbl3String
                         
@@ -72,7 +76,7 @@ class LobbyViewController: UIViewController {
                     if(i == 3)
                     {
                         self.lblLid4.hidden = false;
-                        let lbl4Let = gebruiker.objectForKey("naam")
+                        let lbl4Let = a.objectForKey("naam")
                         let lbl4String:String = lbl4Let as! String
                         self.lblLid4.text = lbl4String
                         
@@ -80,12 +84,13 @@ class LobbyViewController: UIViewController {
                     if(i == 4)
                     {
                         self.lblLid5.hidden = false;
-                        let lbl5Let = gebruiker.objectForKey("naam")
+                        let lbl5Let = a.objectForKey("naam")
                         let lbl5String:String = lbl5Let as! String
                         self.lblLid5.text = lbl5String
                         
                     }
                     i = i + 1
+                    }
                 }
                 
             }
