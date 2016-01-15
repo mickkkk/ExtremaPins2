@@ -138,33 +138,26 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 
                 if(count == 4)
                 {
-                    if(count == 1)
-                    {
                         let pin1 = CLLocationCoordinate2DMake(51.431905,5.454524)
                         let annotation1 = MKPointAnnotation()
                         annotation1.coordinate = pin1
                         annotation1.title = "Title 1"
                         annotation1.subtitle = "Subtitle 1"
                         self.mapView.addAnnotation(annotation1)
-                    }
-                    if(count == 2)
-                    {
+                    
                         let pin2 = CLLocationCoordinate2DMake(51.430347, 5.502702)
                         let annotation2 = MKPointAnnotation()
                         annotation2.coordinate = pin2
                         annotation2.title = "Title 2"
                         annotation2.subtitle = "Subtitle 2"
                         self.mapView.addAnnotation(annotation2)
-                    }
-                    if(count == 3)
-                    {
+                    
                         let pin3 = CLLocationCoordinate2DMake(51.462372, 5.460132)
                         let annotation3 = MKPointAnnotation()
                         annotation3.coordinate = pin3
                         annotation3.title = "Title1 3"
                         annotation3.subtitle = "Subtitle3"
                         self.mapView.addAnnotation(annotation3)
-                    }
                 }
                 if(count == 5)
                 {
