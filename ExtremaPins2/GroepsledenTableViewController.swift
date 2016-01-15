@@ -7,16 +7,15 @@
 //
 
 import UIKit
+import Parse
 
 class GroepsledenTableViewController: UITableViewController {
 
-    let groepsLeden = [
-        ("Ronald"),
-        ("Koos"),
-        ("Dylan"),
-        ("Mick"),
-        ("Dennis")
-    ]
+    var groepsLeden = [String]()
+    
+    
+    
+    
     
    
     override func didReceiveMemoryWarning() {
@@ -49,6 +48,26 @@ class GroepsledenTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let query = PFQuery(className:"Gebruikers")
+        query.whereKey("groepsnaam", equalTo: "groep1")
+        query.findObjectsInBackgroundWithBlock {(NSArray gebruikers, NSError error) -> Void in
+            
+            //(gebruikers:[AnyObject]?, error: NSError) -> Void in
+            if error == nil
+            {
+                for g in gebruikers!{
+                    self.groepsLeden.append(g.objectForKey("naam") as! String)
+                }
+                self.tableView.reloadData()
+                //self.groepsLeden = gebruikers!
+            }
+            else
+            {
+                print("Error in retrieving \(error)")
+            }
+        }
+
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -104,3 +123,4 @@ class GroepsledenTableViewController: UITableViewController {
     */
 
 }
+
