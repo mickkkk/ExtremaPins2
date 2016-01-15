@@ -22,7 +22,10 @@ class NaamViewController: UIViewController {
         // hier schrijf ik de gebruiker weg naar de database als beheerder.
         Gebruiker.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             //self.lblGroepCreated.hidden = false
+            
         }
+        NSUserDefaults.standardUserDefaults().setObject(tbNaam.text!, forKey: "ExtremaPinsName")
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 
     
