@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QBl-J5-gSu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L6V-1j-Qh0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -8,7 +8,7 @@
         <!--Intro View Controller-->
         <scene sceneID="nbo-Vw-ZsN">
             <objects>
-                <viewController id="QBl-J5-gSu" customClass="IntroViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstLogin" id="QBl-J5-gSu" customClass="IntroViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZFI-l4-JP1"/>
                         <viewControllerLayoutGuide type="bottom" id="ecn-io-pok"/>
@@ -236,13 +236,13 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-0e-M2v">
-                                        <rect key="frame" x="433" y="278" width="72" height="30"/>
+                                        <rect key="frame" x="426" y="278" width="87" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="87" id="8eg-Ha-m4r"/>
+                                            <constraint firstAttribute="width" constant="100" id="8eg-Ha-m4r"/>
                                             <constraint firstAttribute="height" constant="30" id="dIB-xd-7wZ"/>
                                         </constraints>
-                                        <state key="normal" title="Go to map">
+                                        <state key="normal" title="Ga naar map">
                                             <color key="titleColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
