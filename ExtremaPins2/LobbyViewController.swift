@@ -77,7 +77,7 @@ class LobbyViewController: UIViewController {
         lblLid3.hidden = true;
         lblLid4.hidden = true;
         lblLid5.hidden = true;
-        /*
+        
         let query1 = PFQuery(className: "Gebruikers")
         query1.whereKey("groepsnaam", equalTo: "groep1")
         query1.countObjectsInBackgroundWithBlock {(countTotaal :Int32, NSError error) -> Void in
@@ -88,7 +88,10 @@ class LobbyViewController: UIViewController {
                 query2.whereKey("gestart", equalTo: true)
                 query2.countObjectsInBackgroundWithBlock {(countGestart :Int32, NSError error) -> Void in
                     if error == nil{
-                        var percentage :Int32 = round((4/5)*100
+                        var totaal:Double = Double(countTotaal)
+                        var gestart:Double = Double(countGestart)
+//                        var percentage = ((countGestart/countTotaal)*100)
+                        var percentage: Double = (gestart/totaal)*100
                         if(percentage > 74)
                         {
                             self.btnGoToMap.hidden = false;
@@ -99,7 +102,7 @@ class LobbyViewController: UIViewController {
                 }
             }
         }
-        */
+        
 
         
         let query = PFQuery(className:"Gebruikers")

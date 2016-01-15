@@ -236,17 +236,18 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-0e-M2v">
-                                        <rect key="frame" x="452" y="278" width="34" height="30"/>
+                                        <rect key="frame" x="433" y="278" width="72" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="87" id="8eg-Ha-m4r"/>
                                             <constraint firstAttribute="height" constant="30" id="dIB-xd-7wZ"/>
                                         </constraints>
-                                        <state key="normal" title="Start">
+                                        <state key="normal" title="Go to map">
                                             <color key="titleColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="btnGoToMap:" destination="L6V-1j-Qh0" eventType="touchUpInside" id="4Pq-Lj-IU7"/>
+                                            <segue destination="jGB-Op-Owh" kind="show" animates="NO" id="JaW-bR-zUO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -374,12 +375,11 @@
                                                     <constraint firstAttribute="height" constant="20" id="pJR-ht-4Ei"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
-                                                <state key="normal" title="Klaar">
+                                                <state key="normal" title="Start">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="btnStart:" destination="L6V-1j-Qh0" eventType="touchUpInside" id="qHv-vu-5mN"/>
-                                                    <segue destination="jGB-Op-Owh" kind="show" animates="NO" id="lan-d2-PXD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
