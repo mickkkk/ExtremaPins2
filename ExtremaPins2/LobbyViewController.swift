@@ -20,8 +20,8 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var ivGestart2: UIImageView!
     @IBOutlet weak var ivGestart3: UIImageView!
     @IBOutlet weak var ivGestart4: UIImageView!
-    
     @IBOutlet weak var btnGoToMap: UIButton!
+    
     @IBAction func btnGoToMap(sender: UIButton) {
     }
     
@@ -46,7 +46,7 @@ class LobbyViewController: UIViewController {
                         } else if let gebruiker = gebruiker
                         {
                             gebruiker["naam"] = self.naam
-                            gebruiker["groep"] = "groep1"
+                            gebruiker["groepsnaam"] = "groep1"
                             gebruiker["gestart"] = true
                             gebruiker.saveInBackground()
                         }
@@ -125,7 +125,7 @@ class LobbyViewController: UIViewController {
                             /*
                             if(self.lblLid1.isEqual(self.naam))
                             {
-                                self.lblLid2.textColor = UIColor.redColor()
+                                //self.lblLid2.textColor = UIColor.redColor()
                                 //self.lblLid1.textColor = UIColor(red: 1.0, green: 0.000, blue: 0.0, alpha: 1.0)
                             }
                             */
