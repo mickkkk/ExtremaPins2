@@ -1,28 +1,26 @@
 //
 //  Pin.swift
-//  ExtremaPins
+//  ExtremaPins2
 //
-//  Created by Fhict on 27/11/15.
-//  Copyright © 2015 Mick Vranken. All rights reserved.
+//  Created by Fhict on 19/01/16.
+//  Copyright © 2016 Mick Vranken. All rights reserved.
 //
 
 import Foundation
-import Parse
+import MapKit
 
-class Pin
-{
-    var pinNr:Int32
-    var xCoordinaat: Int32
-    var yCoordinaat: Int32
-    var gebruikersNr: Int32
+class Pin: NSObject, MKAnnotation {
+    var title: String?
+    var subtitle: String?
+    var latitude: Double
+    var longitude:Double
     
-    init(pinNr:Int32, xCoordinaat:Int32, yCoordinaat:Int32, gebruikersNr:Int32)
-    {
-        //self.naam = naam!
-        self.pinNr = pinNr
-        self.xCoordinaat = xCoordinaat
-        self.yCoordinaat = yCoordinaat
-        self.gebruikersNr = gebruikersNr
-        // test123
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+    
+    init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }

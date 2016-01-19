@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>lat</key>
+		<real>51.431905</real>
+		<key>long</key>
+		<real>5.454524</real>
+		<key>no</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>Gezet door: Koos</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<real>51.430347</real>
+		<key>long</key>
+		<real>5.502702</real>
+		<key>no</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Gezet door: Dylan</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<real>51.462372</real>
+		<key>long</key>
+		<real>5.460132</real>
+		<key>no</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>Gezet door: Ronald</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<real>51.449501</real>
+		<key>long</key>
+		<real>5.479442</real>
+		<key>no</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Gezet door: Dennis</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<real>51.456226</real>
+		<key>long</key>
+		<real>5.51622</real>
+		<key>no</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Gezet door: Mick</string>
+	</dict>
+</array>
+</plist>
