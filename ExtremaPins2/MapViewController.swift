@@ -345,7 +345,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     //MARK:- Annotations
-    
+    /*
     func getMapAnnotations() -> [Pin] {
         var annotations:Array = [Pin]()
         
@@ -367,6 +367,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         return annotations
     }
+*/
     
     //MARK:- MapViewDelegate methods
     

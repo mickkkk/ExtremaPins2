@@ -34,7 +34,22 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OHR-k5-ZkL" kind="show" animates="NO" id="JHl-Xh-Cpf"/>
+                                    <action selector="btnZetPin:" destination="QBl-J5-gSu" eventType="touchUpInside" id="S9C-PZ-9z8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIs-r0-Yuz">
+                                <rect key="frame" x="469" y="550" width="67" height="30"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8yn-Q1-hBQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zg3-mu-0lw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="Ga verder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OHR-k5-ZkL" kind="show" animates="NO" id="KR5-xR-Ael"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,12 +64,14 @@
                             <constraint firstItem="GIw-Xb-pNg" firstAttribute="leading" secondItem="1Sm-w3-C26" secondAttribute="leading" id="YJ1-we-IM5"/>
                             <constraint firstItem="nBI-m5-Uqq" firstAttribute="top" secondItem="1Sm-w3-C26" secondAttribute="top" id="YUw-jG-hcI"/>
                             <constraint firstItem="ecn-io-pok" firstAttribute="top" secondItem="Ewq-jR-HFp" secondAttribute="bottom" id="qfc-9Z-AsA"/>
+                            <constraint firstAttribute="trailing" secondItem="PIs-r0-Yuz" secondAttribute="trailing" constant="10" id="ssy-5B-tOZ"/>
                             <constraint firstAttribute="trailing" secondItem="GIw-Xb-pNg" secondAttribute="trailing" id="ucY-jh-byi"/>
                             <constraint firstAttribute="trailing" secondItem="nBI-m5-Uqq" secondAttribute="trailing" id="vKD-KA-ynr"/>
                             <constraint firstItem="Ewq-jR-HFp" firstAttribute="centerX" secondItem="1Sm-w3-C26" secondAttribute="centerX" id="yqY-tC-B3J"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnGaVerder" destination="PIs-r0-Yuz" id="i6F-3h-jN1"/>
                         <outlet property="mapView" destination="GIw-Xb-pNg" id="Syz-Ic-MgX"/>
                     </connections>
                 </viewController>
