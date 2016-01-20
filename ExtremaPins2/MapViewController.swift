@@ -196,6 +196,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             
             if error == nil
             {
+                if(count == 1)
+                {
+                    
+                    self.mapView.delegate = self
+                    
+                    let lat1:Double = 51.431905
+                    let long1:Double = 5.454524
+                    let annotation1 = Pin(latitude: lat1, longitude: long1)
+                    
+                    let circle1 = MKCircle(centerCoordinate: annotation1.coordinate, radius: 300)
+                    
+                    self.mapView.addOverlay(circle1)
+                }
+                
+                
                 if(count == 2)
                 {
                     let lat1:Double = 51.431905
@@ -207,6 +222,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                     self.mapView.addAnnotations(annotations1)
                     
                     self.mapView.delegate = self
+                    
+                    
+                    let lat2:Double = 51.456226
+                    let long2:Double = 5.51622
+                    let annotation2 = Pin(latitude: lat2, longitude: long2)
+                    
+                    let circle2 = MKCircle(centerCoordinate: annotation2.coordinate, radius: 300)
+                    
+                    self.mapView.addOverlay(circle2)
                     
                 }
                 if(count == 3)
@@ -227,15 +251,24 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                     
                     self.mapView.delegate = self
                     
-                    var points1: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
+                    var points3: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
                     
                     for annotation in annotations1 {
-                        points1.append(annotation.coordinate)
+                        points3.append(annotation.coordinate)
                     }
                     
-                    let polyline1 = MKPolyline(coordinates: &points1, count: points1.count)
                     
-                    self.mapView.addOverlay(polyline1)
+                    let lat3:Double = 51.462372
+                    let long3:Double = 5.460132
+                    let annotation3 = Pin(latitude: lat3, longitude: long3)
+                    
+                    let circle3 = MKCircle(centerCoordinate: annotation3.coordinate, radius: 300)
+                    let polyline3 = MKPolyline(coordinates: &points3, count: points3.count)
+                    
+                    
+                    self.mapView.addOverlay(circle3)
+                    self.mapView.addOverlay(polyline3)
+                    
                     
                 }
                 
@@ -264,15 +297,22 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                     
                     self.mapView.delegate = self
                     
-                    var points1: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
+                    var points4: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
                     
                     for annotation in annotations1 {
-                        points1.append(annotation.coordinate)
+                        points4.append(annotation.coordinate)
                     }
                     
-                    let polyline1 = MKPolyline(coordinates: &points1, count: points1.count)
+                    let lat4:Double = 51.430347
+                    let long4:Double = 5.502702
+                    let annotation4 = Pin(latitude: lat4, longitude: long4)
                     
-                    self.mapView.addOverlay(polyline1)
+                    let circle4 = MKCircle(centerCoordinate: annotation4.coordinate, radius: 300)
+                    
+                    let polyline4 = MKPolyline(coordinates: &points4, count: points4.count)
+                    
+                    self.mapView.addOverlay(polyline4)
+                    self.mapView.addOverlay(circle4)
                 }
             }
         }
@@ -332,13 +372,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        let circleRenderer = MKCircleRenderer(overlay: overlay)
         
         if overlay is MKPolyline {
-            polylineRenderer.strokeColor = UIColor.blueColor()
+            polylineRenderer.strokeColor = UIColor.redColor()
             polylineRenderer.lineWidth = 5
             
         }
+        
+        if overlay is MKCircle {
+            circleRenderer.strokeColor = UIColor.blueColor()
+            circleRenderer.lineWidth = 5
+            return circleRenderer
+        }
         return polylineRenderer
+        
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
