@@ -342,11 +342,33 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations.last
         
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        var center = CLLocationCoordinate2D(latitude: 51.45169, longitude: 5.48160)
         
-        //let locationFontys = CLLocationCoordinate2DMake(51.45169,5.48160)
+        let query = PFQuery(className:"Gebruikers")
+        query.whereKey("groepsnaam", equalTo: "groep1")
+        query.countObjectsInBackgroundWithBlock {(count :Int32, NSError error) -> Void in
+            
+            if error == nil
+            {
+                if(count == 1)
+                {
+                    center = CLLocationCoordinate2D(latitude: 51.431905, longitude: 5.454524)
+                }
+                if(count == 2)
+                {
+                    center = CLLocationCoordinate2D(latitude: 51.456226, longitude: 5.51622)
+                }
+                if(count == 3)
+                {
+                    center = CLLocationCoordinate2D(latitude: 51.462372, longitude: 5.460132)
+                }
+                if(count == 4)
+                {
+                    center = CLLocationCoordinate2D(latitude: 51.430347, longitude: 5.502702)
+                }
+            }
+        }
         
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta:0.08, longitudeDelta:0.08))
         
