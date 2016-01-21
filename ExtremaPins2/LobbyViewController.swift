@@ -76,7 +76,6 @@ class LobbyViewController: UIViewController {
         lblLid2.hidden = true;
         lblLid3.hidden = true;
         lblLid4.hidden = true;
-        lblLid5.hidden = true;
         
         let query1 = PFQuery(className: "Gebruikers")
         query1.whereKey("groepsnaam", equalTo: "groep1")
@@ -182,23 +181,6 @@ class LobbyViewController: UIViewController {
                             else
                             {
                                 self.ivGestart3.backgroundColor = UIColor.redColor()
-                            }
-                        }
-                        if(i == 4)
-                        {
-                            self.lblLid5.hidden = false;
-                            let lbl5Let = a.objectForKey("naam")
-                            let lbl5String:String = lbl5Let as! String
-                            self.lblLid5.text = lbl5String
-                            self.ivGestart4.hidden = false;
-                            let gestart:Bool = a.objectForKey("gestart") as! Bool
-                            if(gestart == true)
-                            {
-                                self.ivGestart4.backgroundColor = UIColor.greenColor()
-                            }
-                            else
-                            {
-                                self.ivGestart4.backgroundColor = UIColor.redColor()
                             }
                         }
                         i = i + 1

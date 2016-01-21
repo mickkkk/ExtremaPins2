@@ -42,6 +42,7 @@
 		F5D3C58B1C47DEF200192066 /* GroepsledenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3C58A1C47DEF200192066 /* GroepsledenTableViewController.swift */; };
 		F5F1AEAA1C4EB4EF009E3204 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F1AEA91C4EB4EF009E3204 /* Pin.swift */; };
 		F5F1AEAC1C4EB5BD009E3204 /* pins.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5F1AEAB1C4EB5BD009E3204 /* pins.plist */; };
+		F5F709F51C50E5C1008CAE6E /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5F709F41C50E5C1008CAE6E /* photo.jpg */; };
 		F5F70B191C465FE8009B61EB /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B181C465FE8009B61EB /* LobbyViewController.swift */; };
 		F5F70B1B1C466241009B61EB /* NaamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F70B1A1C466241009B61EB /* NaamViewController.swift */; };
 		F5F70B1F1C467E30009B61EB /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F70B1C1C467E30009B61EB /* facebook.png */; };
@@ -108,6 +109,7 @@
 		F5D3C58A1C47DEF200192066 /* GroepsledenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroepsledenTableViewController.swift; sourceTree = "<group>"; };
 		F5F1AEA91C4EB4EF009E3204 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		F5F1AEAB1C4EB5BD009E3204 /* pins.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pins.plist; sourceTree = "<group>"; };
+		F5F709F41C50E5C1008CAE6E /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 		F5F70B181C465FE8009B61EB /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		F5F70B1A1C466241009B61EB /* NaamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaamViewController.swift; sourceTree = "<group>"; };
 		F5F70B1C1C467E30009B61EB /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			children = (
 				F5F70B1C1C467E30009B61EB /* facebook.png */,
 				F5F70B1D1C467E30009B61EB /* twitter.png */,
+				F5F709F41C50E5C1008CAE6E /* photo.jpg */,
 				F5F70B1E1C467E30009B61EB /* whatsapp.png */,
 				F50CA5181C3FC3750042EA09 /* pin_photo.png */,
 				F50CA5161C3FC1EC0042EA09 /* ribbon.png */,
@@ -356,6 +359,7 @@
 			files = (
 				F50CA5171C3FC1EC0042EA09 /* ribbon.png in Resources */,
 				F5678C291C1048DD0052EE01 /* LaunchScreen.storyboard in Resources */,
+				F5F709F51C50E5C1008CAE6E /* photo.jpg in Resources */,
 				F51DD1EF1C1996A300E26E5B /* pinDEF.jpg in Resources */,
 				F5F1AEAC1C4EB5BD009E3204 /* pins.plist in Resources */,
 				F5F70B1F1C467E30009B61EB /* facebook.png in Resources */,
