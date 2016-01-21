@@ -67,6 +67,9 @@ class LobbyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.hidden = true
+        
         btnGoToMap.hidden = true;
         ivGestart1.hidden = true;
         ivGestart2.hidden = true;

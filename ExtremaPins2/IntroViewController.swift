@@ -89,6 +89,7 @@ class IntroViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.btnGaVerder.hidden = true
         
         self.locationManager.delegate = self

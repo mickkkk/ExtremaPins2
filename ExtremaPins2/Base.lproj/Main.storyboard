@@ -643,10 +643,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="605" height="479"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK5-6B-nAz">
-                                <rect key="frame" x="79" y="555" width="426" height="45"/>
+                                <rect key="frame" x="79" y="555" width="421" height="45"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Fcf-pb-AG0"/>
+                                    <constraint firstAttribute="height" constant="50" id="PHj-dB-zsE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
                                 <state key="normal" title="Zet pin!">
@@ -663,8 +663,8 @@
                                     <constraint firstAttribute="height" constant="50" id="Tq1-qE-bps"/>
                                     <constraint firstAttribute="width" constant="100" id="c8h-1x-6w1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
-                                <state key="normal" title="&gt;">
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Groep">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -672,28 +672,35 @@
                                     <segue destination="Avw-QW-HUy" kind="show" animates="NO" id="Ata-aW-4wb"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fS3-jR-OIa">
-                                <rect key="frame" x="0.0" y="555" width="71" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zM-t1-Kfo">
+                                <rect key="frame" x="5" y="564" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="JpA-GD-1Ao"/>
-                                    <constraint firstAttribute="height" constant="50" id="MHV-XB-IOz"/>
+                                    <constraint firstAttribute="height" constant="50" id="D3o-9T-y00"/>
+                                    <constraint firstAttribute="width" constant="100" id="iYN-b8-y6r"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Lobby">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="L6V-1j-Qh0" kind="show" animates="NO" id="kzg-Qg-5Ys"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fS3-jR-OIa" firstAttribute="leading" secondItem="3K8-2t-4iK" secondAttribute="leading" id="BoQ-so-pPg"/>
+                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="WK5-6B-nAz" secondAttribute="bottom" id="20o-P4-lov"/>
+                            <constraint firstItem="7zM-t1-Kfo" firstAttribute="leading" secondItem="3K8-2t-4iK" secondAttribute="leading" id="5MD-tc-hKL"/>
+                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="7zM-t1-Kfo" secondAttribute="bottom" id="9ns-18-Hft"/>
                             <constraint firstAttribute="trailing" secondItem="Dhv-mc-Tsf" secondAttribute="trailing" id="CR1-LA-UXj"/>
-                            <constraint firstItem="fS3-jR-OIa" firstAttribute="top" secondItem="yzF-jn-O3q" secondAttribute="bottom" id="IaB-Zd-Go6"/>
-                            <constraint firstItem="Dhv-mc-Tsf" firstAttribute="leading" secondItem="WK5-6B-nAz" secondAttribute="trailing" id="NId-IM-fZP"/>
-                            <constraint firstItem="WK5-6B-nAz" firstAttribute="leading" secondItem="fS3-jR-OIa" secondAttribute="trailing" id="ObA-50-HIP"/>
+                            <constraint firstItem="WK5-6B-nAz" firstAttribute="top" secondItem="yzF-jn-O3q" secondAttribute="bottom" id="FEM-tA-ECP"/>
                             <constraint firstItem="yzF-jn-O3q" firstAttribute="leading" secondItem="3K8-2t-4iK" secondAttribute="leading" id="QdZ-DJ-gHk"/>
-                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="WK5-6B-nAz" secondAttribute="bottom" id="R2L-eH-cbf"/>
+                            <constraint firstItem="WK5-6B-nAz" firstAttribute="leading" secondItem="7zM-t1-Kfo" secondAttribute="trailing" constant="3" id="Z7p-k3-9Wi"/>
                             <constraint firstItem="yzF-jn-O3q" firstAttribute="top" secondItem="3K8-2t-4iK" secondAttribute="top" id="aFl-EN-sQe"/>
                             <constraint firstAttribute="trailing" secondItem="yzF-jn-O3q" secondAttribute="trailing" id="apF-ve-tMP"/>
                             <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="Dhv-mc-Tsf" secondAttribute="bottom" id="ddk-gE-sD7"/>
-                            <constraint firstItem="16l-GY-eA6" firstAttribute="top" secondItem="fS3-jR-OIa" secondAttribute="bottom" id="nUL-3C-CMS"/>
+                            <constraint firstItem="Dhv-mc-Tsf" firstAttribute="leading" secondItem="WK5-6B-nAz" secondAttribute="trailing" constant="3" id="dos-Qb-pbk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XWL-bc-o9K"/>
@@ -820,7 +827,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNX-J6-CES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2825" y="339"/>
+            <point key="canvasLocation" x="2963" y="-61"/>
         </scene>
     </scenes>
     <resources>
@@ -835,4 +842,7 @@
         <image name="uitleg2.png" width="492" height="504"/>
         <image name="whatsapp.png" width="72" height="73"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kzg-Qg-5Ys"/>
+    </inferredMetricsTieBreakers>
 </document>
