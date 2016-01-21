@@ -20,7 +20,11 @@ class IntroViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     @IBOutlet weak var btnGaVerder: UIButton!
     
+    @IBOutlet weak var btnZetPin: UIButton!
+    
     @IBAction func btnZetPin(sender: UIButton) {
+        
+        self.btnZetPin.hidden = true
         var annotations1:Array = [Pin]()
         var annotations2:Array = [Pin]()
         

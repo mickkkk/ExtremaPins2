@@ -37,15 +37,11 @@
                                     <action selector="btnZetPin:" destination="QBl-J5-gSu" eventType="touchUpInside" id="S9C-PZ-9z8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIs-r0-Yuz">
-                                <rect key="frame" x="469" y="550" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIs-r0-Yuz">
+                                <rect key="frame" x="343" y="531" width="95" height="42"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8yn-Q1-hBQ"/>
-                                    <constraint firstAttribute="width" constant="100" id="Zg3-mu-0lw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                <state key="normal" title="Ga verder">
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
+                                <state key="normal" title="Ga verder!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -55,16 +51,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PIs-r0-Yuz" firstAttribute="top" secondItem="GIw-Xb-pNg" secondAttribute="bottom" id="9SP-0r-fLO"/>
                             <constraint firstItem="Ewq-jR-HFp" firstAttribute="top" secondItem="GIw-Xb-pNg" secondAttribute="bottom" id="BGZ-Iz-b1B"/>
                             <constraint firstItem="ecn-io-pok" firstAttribute="top" secondItem="nBI-m5-Uqq" secondAttribute="bottom" id="BZR-pR-gPP"/>
                             <constraint firstAttribute="trailing" secondItem="Ewq-jR-HFp" secondAttribute="trailing" id="F6I-8f-dYz"/>
                             <constraint firstItem="Ewq-jR-HFp" firstAttribute="leading" secondItem="1Sm-w3-C26" secondAttribute="leading" id="Fy2-8p-nCG"/>
                             <constraint firstItem="GIw-Xb-pNg" firstAttribute="top" secondItem="1Sm-w3-C26" secondAttribute="top" id="JNF-BL-0ca"/>
+                            <constraint firstAttribute="trailing" secondItem="PIs-r0-Yuz" secondAttribute="trailing" id="Lov-31-jPh"/>
+                            <constraint firstItem="ecn-io-pok" firstAttribute="top" secondItem="PIs-r0-Yuz" secondAttribute="bottom" id="V5h-AI-wzU"/>
                             <constraint firstItem="nBI-m5-Uqq" firstAttribute="leading" secondItem="1Sm-w3-C26" secondAttribute="leading" id="X48-Ds-agk"/>
                             <constraint firstItem="GIw-Xb-pNg" firstAttribute="leading" secondItem="1Sm-w3-C26" secondAttribute="leading" id="YJ1-we-IM5"/>
                             <constraint firstItem="nBI-m5-Uqq" firstAttribute="top" secondItem="1Sm-w3-C26" secondAttribute="top" id="YUw-jG-hcI"/>
+                            <constraint firstItem="PIs-r0-Yuz" firstAttribute="leading" secondItem="1Sm-w3-C26" secondAttribute="leading" id="c5f-dR-Sqg"/>
                             <constraint firstItem="ecn-io-pok" firstAttribute="top" secondItem="Ewq-jR-HFp" secondAttribute="bottom" id="qfc-9Z-AsA"/>
-                            <constraint firstAttribute="trailing" secondItem="PIs-r0-Yuz" secondAttribute="trailing" constant="10" id="ssy-5B-tOZ"/>
                             <constraint firstAttribute="trailing" secondItem="GIw-Xb-pNg" secondAttribute="trailing" id="ucY-jh-byi"/>
                             <constraint firstAttribute="trailing" secondItem="nBI-m5-Uqq" secondAttribute="trailing" id="vKD-KA-ynr"/>
                             <constraint firstItem="Ewq-jR-HFp" firstAttribute="centerX" secondItem="1Sm-w3-C26" secondAttribute="centerX" id="yqY-tC-B3J"/>
@@ -72,17 +71,18 @@
                     </view>
                     <connections>
                         <outlet property="btnGaVerder" destination="PIs-r0-Yuz" id="i6F-3h-jN1"/>
+                        <outlet property="btnZetPin" destination="Ewq-jR-HFp" id="pQf-gz-RV4"/>
                         <outlet property="mapView" destination="GIw-Xb-pNg" id="Syz-Ic-MgX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5F8-SN-7iP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575" y="311"/>
+            <point key="canvasLocation" x="-1247" y="451"/>
         </scene>
-        <!--Join View Controller-->
+        <!--Uitleg View Controller-->
         <scene sceneID="AvI-MY-4Ia">
             <objects>
-                <viewController id="OHR-k5-ZkL" customClass="JoinViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OHR-k5-ZkL" customClass="UitlegViewController" customModule="ExtremaPins2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hO0-lL-09m"/>
                         <viewControllerLayoutGuide type="bottom" id="Ci5-Lg-kUl"/>
@@ -94,11 +94,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5t2-Vc-ly0">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logoDEF.png" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-2k-eCW">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoDEF.png" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-2k-eCW">
                                         <rect key="frame" x="222" y="20" width="156" height="110"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="156" id="Mkh-N3-9b5"/>
-                                            <constraint firstAttribute="height" constant="110" id="SsN-XA-agX"/>
+                                            <constraint firstAttribute="height" constant="110" id="4QM-e9-r3K"/>
+                                            <constraint firstAttribute="width" constant="156" id="l3h-Qh-gA6"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pin_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bGb-xQ-7S1">
@@ -107,43 +107,6 @@
                                             <constraint firstAttribute="height" constant="200" id="5b8-Lb-ehb"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Zet samen met zoveel mogelijk vrienden alle pins op de kaart zodat het woord zichtbaar wordt en verdien hiermee mooie prijzen." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYc-lN-L7n">
-                                        <rect key="frame" x="0.0" y="-20" width="982" height="18.5"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ReF-9c-Son">
-                                        <rect key="frame" x="55" y="131" width="518" height="89"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Zet samen met zoveel mogelijk vrienden alle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0I-my-XoE">
-                                                <rect key="frame" x="79" y="12" width="317" height="21"/>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=" pins op de kaart zodat het woord zichtbaar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEL-vn-7xq">
-                                                <rect key="frame" x="83" y="33" width="344" height="21"/>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=" wordt en verdien hiermee mooie prijzen." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hns-7V-8db">
-                                                <rect key="frame" x="91" y="54" width="293" height="21"/>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="X0I-my-XoE" firstAttribute="top" secondItem="ReF-9c-Son" secondAttribute="top" constant="15" id="4Qf-bK-H4X"/>
-                                            <constraint firstItem="nEL-vn-7xq" firstAttribute="top" secondItem="X0I-my-XoE" secondAttribute="bottom" constant="5" id="E0g-gM-yrR"/>
-                                            <constraint firstItem="X0I-my-XoE" firstAttribute="centerX" secondItem="ReF-9c-Son" secondAttribute="centerX" id="Eyr-JG-PvF"/>
-                                            <constraint firstItem="hns-7V-8db" firstAttribute="centerX" secondItem="ReF-9c-Son" secondAttribute="centerX" id="FwH-5c-21x"/>
-                                            <constraint firstItem="nEL-vn-7xq" firstAttribute="centerX" secondItem="ReF-9c-Son" secondAttribute="centerX" id="d0i-Pm-UpD"/>
-                                            <constraint firstItem="hns-7V-8db" firstAttribute="top" secondItem="nEL-vn-7xq" secondAttribute="bottom" constant="5" id="l3g-J2-ijh"/>
-                                        </constraints>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbZ-gW-FpM">
                                         <rect key="frame" x="508" y="517" width="50" height="31"/>
                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
@@ -155,37 +118,34 @@
                                         <rect key="frame" x="508" y="524" width="65" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="65" id="02J-le-AKM"/>
-                                            <constraint firstAttribute="height" constant="30" id="Y6A-YH-nFA"/>
+                                            <constraint firstAttribute="width" constant="80" id="02J-le-AKM"/>
+                                            <constraint firstAttribute="height" constant="40" id="Y6A-YH-nFA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                         <state key="normal" title="Verder">
                                             <color key="titleColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="kTm-9J-dOH" kind="show" animates="NO" id="yG3-Ox-FuR"/>
+                                            <segue destination="EYI-Rc-SgU" kind="show" animates="NO" id="946-tX-75S"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ribbon.png" translatesAutoresizingMaskIntoConstraints="NO" id="XNl-CW-F7B">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="uitleg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="XNl-CW-F7B">
                                         <rect key="frame" x="180" y="261" width="240" height="128"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.23921568627450979" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="bGb-xQ-7S1" firstAttribute="top" secondItem="XNl-CW-F7B" secondAttribute="bottom" id="AmJ-rV-TxQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XNl-CW-F7B" secondAttribute="trailing" id="2Y1-Cm-XEM"/>
                                     <constraint firstItem="bGb-xQ-7S1" firstAttribute="leading" secondItem="5t2-Vc-ly0" secondAttribute="leading" constant="70" id="CW8-aT-zj3"/>
                                     <constraint firstAttribute="bottom" secondItem="bGb-xQ-7S1" secondAttribute="bottom" id="EBF-7Y-EcP"/>
-                                    <constraint firstItem="ReF-9c-Son" firstAttribute="top" secondItem="xiU-2k-eCW" secondAttribute="bottom" id="FO3-3U-n9A"/>
+                                    <constraint firstItem="bGb-xQ-7S1" firstAttribute="top" secondItem="XNl-CW-F7B" secondAttribute="bottom" id="FdU-0I-OW6"/>
                                     <constraint firstItem="MNg-LF-5dN" firstAttribute="leading" secondItem="bGb-xQ-7S1" secondAttribute="trailing" constant="35" id="Fm7-dP-eds"/>
-                                    <constraint firstItem="xiU-2k-eCW" firstAttribute="top" secondItem="RYc-lN-L7n" secondAttribute="bottom" constant="20" id="MRV-h1-fP3"/>
-                                    <constraint firstItem="XNl-CW-F7B" firstAttribute="top" secondItem="ReF-9c-Son" secondAttribute="bottom" constant="10" id="SD9-DA-mkr"/>
-                                    <constraint firstItem="XNl-CW-F7B" firstAttribute="leading" secondItem="5t2-Vc-ly0" secondAttribute="leading" id="aeq-gz-EcH"/>
-                                    <constraint firstItem="xiU-2k-eCW" firstAttribute="centerX" secondItem="5t2-Vc-ly0" secondAttribute="centerX" id="cED-ur-xwR"/>
-                                    <constraint firstItem="ReF-9c-Son" firstAttribute="leading" secondItem="5t2-Vc-ly0" secondAttribute="leading" constant="40" id="dsp-QH-aAL"/>
+                                    <constraint firstItem="xiU-2k-eCW" firstAttribute="top" secondItem="5t2-Vc-ly0" secondAttribute="top" constant="20" id="ZIZ-UI-Arc"/>
+                                    <constraint firstItem="xiU-2k-eCW" firstAttribute="centerX" secondItem="5t2-Vc-ly0" secondAttribute="centerX" id="cuH-ed-lbr"/>
+                                    <constraint firstItem="XNl-CW-F7B" firstAttribute="leading" secondItem="5t2-Vc-ly0" secondAttribute="leading" id="dKW-kJ-hY8"/>
                                     <constraint firstAttribute="bottom" secondItem="MNg-LF-5dN" secondAttribute="bottom" constant="30" id="gRg-vH-T9A"/>
                                     <constraint firstAttribute="trailing" secondItem="MNg-LF-5dN" secondAttribute="trailing" constant="30" id="hRl-mp-cWg"/>
-                                    <constraint firstAttribute="trailing" secondItem="ReF-9c-Son" secondAttribute="trailing" constant="40" id="sTg-dk-Ki3"/>
-                                    <constraint firstAttribute="trailing" secondItem="XNl-CW-F7B" secondAttribute="trailing" id="wVR-tl-3Lc"/>
+                                    <constraint firstItem="XNl-CW-F7B" firstAttribute="top" secondItem="xiU-2k-eCW" secondAttribute="bottom" id="soO-a0-op1"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -201,7 +161,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4G-RJ-lMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="167" y="299"/>
+            <point key="canvasLocation" x="-429" y="451"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="olK-nV-ZDF">
+            <objects>
+                <viewController id="EYI-Rc-SgU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="76X-Wo-b6h"/>
+                        <viewControllerLayoutGuide type="bottom" id="kqt-v8-aft"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pYe-Es-HGk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ave-DH-y8s">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODz-MF-hIV">
+                                        <rect key="frame" x="492" y="539" width="92" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="3rP-lP-Odj"/>
+                                            <constraint firstAttribute="height" constant="40" id="lT2-Ss-6JF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                        <state key="normal" title="Ik snap het!">
+                                            <color key="titleColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="kTm-9J-dOH" kind="show" animates="NO" id="54B-gQ-XuD"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pin_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q1l-MJ-x7g">
+                                        <rect key="frame" x="64" y="464" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="cUf-up-ti1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logoDEF.png" translatesAutoresizingMaskIntoConstraints="NO" id="oeu-jg-Svm">
+                                        <rect key="frame" x="180" y="18" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="4Rj-ZG-7Lb"/>
+                                            <constraint firstAttribute="height" constant="110" id="vf0-JA-4IA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="uitleg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-dl-nVJ">
+                                        <rect key="frame" x="144" y="252" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Q1l-MJ-x7g" firstAttribute="leading" secondItem="ave-DH-y8s" secondAttribute="leading" constant="70" id="DqL-n3-dzZ"/>
+                                    <constraint firstItem="AF0-dl-nVJ" firstAttribute="leading" secondItem="ave-DH-y8s" secondAttribute="leading" id="FI6-8a-8kI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q1l-MJ-x7g" secondAttribute="bottom" id="Jfy-ac-Nbl"/>
+                                    <constraint firstItem="AF0-dl-nVJ" firstAttribute="top" secondItem="oeu-jg-Svm" secondAttribute="bottom" id="LAn-RZ-Tbp"/>
+                                    <constraint firstAttribute="trailing" secondItem="AF0-dl-nVJ" secondAttribute="trailing" id="MFp-6S-DOt"/>
+                                    <constraint firstItem="Q1l-MJ-x7g" firstAttribute="top" secondItem="AF0-dl-nVJ" secondAttribute="bottom" id="W9A-zm-IA2"/>
+                                    <constraint firstItem="ODz-MF-hIV" firstAttribute="leading" secondItem="Q1l-MJ-x7g" secondAttribute="trailing" constant="35" id="ffO-vj-7j0"/>
+                                    <constraint firstItem="oeu-jg-Svm" firstAttribute="top" secondItem="ave-DH-y8s" secondAttribute="top" constant="20" id="hzi-ty-MGi"/>
+                                    <constraint firstItem="oeu-jg-Svm" firstAttribute="centerX" secondItem="ave-DH-y8s" secondAttribute="centerX" id="iQ4-2J-V9S"/>
+                                    <constraint firstAttribute="trailing" secondItem="ODz-MF-hIV" secondAttribute="trailing" constant="30" id="jjU-C7-nTe"/>
+                                    <constraint firstAttribute="bottom" secondItem="ODz-MF-hIV" secondAttribute="bottom" constant="30" id="y15-ZC-t9M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ave-DH-y8s" firstAttribute="bottom" secondItem="kqt-v8-aft" secondAttribute="top" id="6h6-1r-ErR"/>
+                            <constraint firstAttribute="trailing" secondItem="ave-DH-y8s" secondAttribute="trailing" id="LSn-LL-L0y"/>
+                            <constraint firstItem="ave-DH-y8s" firstAttribute="top" secondItem="pYe-Es-HGk" secondAttribute="top" id="LfF-Qd-flC"/>
+                            <constraint firstItem="ave-DH-y8s" firstAttribute="leading" secondItem="pYe-Es-HGk" secondAttribute="leading" id="SD1-gG-bf8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6e-qG-siW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="105"/>
         </scene>
         <!--Lobby View Controller-->
         <scene sceneID="hDG-Yb-FL4">
@@ -792,9 +828,11 @@
         <image name="facebook.png" width="72" height="73"/>
         <image name="logoDEF.png" width="199" height="129"/>
         <image name="photo.jpg" width="492" height="207"/>
+        <image name="pin_map.png" width="347" height="423"/>
         <image name="pin_photo.png" width="347" height="423"/>
-        <image name="ribbon.png" width="492" height="255"/>
         <image name="twitter.png" width="72" height="73"/>
+        <image name="uitleg1.png" width="492" height="455"/>
+        <image name="uitleg2.png" width="492" height="504"/>
         <image name="whatsapp.png" width="72" height="73"/>
     </resources>
 </document>
