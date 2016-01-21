@@ -15,16 +15,20 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var lblLid2: UILabel!
     @IBOutlet weak var lblLid3: UILabel!
     @IBOutlet weak var lblLid4: UILabel!
-    @IBOutlet weak var lblLid5: UILabel!
     @IBOutlet weak var ivGestart1: UIImageView!
     @IBOutlet weak var ivGestart2: UIImageView!
     @IBOutlet weak var ivGestart3: UIImageView!
     @IBOutlet weak var ivGestart4: UIImageView!
+    @IBOutlet weak var ivGestart5: UIImageView!
+    
+    
+    
     @IBOutlet weak var btnGoToMap: UIButton!
     
     @IBAction func btnGoToMap(sender: UIButton) {
     }
     
+    @IBOutlet weak var btnStart: UIButton!
     
     
     @IBAction func btnStart(sender: UIButton) {
@@ -57,13 +61,44 @@ class LobbyViewController: UIViewController {
             } else{
                 print("Error in retrieving \(error)")
             }
-            self.viewDidLoad()
+            self.btnStart.hidden = true
+            self.ivGestart5.hidden = false
+            sleep(1)
+            self.BerekenPercentage()
         }
     }
     
     var naam: String!
     var array: NSArray!
     var arr:NSArray!
+    
+    func BerekenPercentage(){
+        let query1 = PFQuery(className: "Gebruikers")
+        query1.whereKey("groepsnaam", equalTo: "groep1")
+        query1.countObjectsInBackgroundWithBlock {(countTotaal :Int32, NSError error) -> Void in
+            
+            if error == nil
+            {
+                let query2 = PFQuery(className: "Gebruikers")
+                query2.whereKey("gestart", equalTo: true)
+                query2.countObjectsInBackgroundWithBlock {(countGestart :Int32, NSError error) -> Void in
+                    if error == nil{
+                        let totaal:Double = Double(countTotaal)
+                        let gestart:Double = Double(countGestart)
+                        //                        var percentage = ((countGestart/countTotaal)*100)
+                        let percentage: Double = (gestart/totaal)*100
+                        if(percentage > 74)
+                        {
+                            self.btnGoToMap.hidden = false;
+                        }
+                    }else{
+                        print("Error in retrieving \(error)")
+                    }
+                }
+            }
+        }
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,31 +115,7 @@ class LobbyViewController: UIViewController {
         lblLid3.hidden = true;
         lblLid4.hidden = true;
         
-        let query1 = PFQuery(className: "Gebruikers")
-        query1.whereKey("groepsnaam", equalTo: "groep1")
-        query1.countObjectsInBackgroundWithBlock {(countTotaal :Int32, NSError error) -> Void in
-            
-            if error == nil
-            {
-                let query2 = PFQuery(className: "Gebruikers")
-                query2.whereKey("gestart", equalTo: true)
-                query2.countObjectsInBackgroundWithBlock {(countGestart :Int32, NSError error) -> Void in
-                    if error == nil{
-                        var totaal:Double = Double(countTotaal)
-                        var gestart:Double = Double(countGestart)
-//                        var percentage = ((countGestart/countTotaal)*100)
-                        var percentage: Double = (gestart/totaal)*100
-                        if(percentage > 74)
-                        {
-                            self.btnGoToMap.hidden = false;
-                        }
-                    }else{
-                        print("Error in retrieving \(error)")
-                    }
-                }
-            }
-        }
-        
+        BerekenPercentage()
 
         
         let query = PFQuery(className:"Gebruikers")
@@ -127,13 +138,17 @@ class LobbyViewController: UIViewController {
                             let lbl1Let = a.objectForKey("naam")
                             let lbl1String:String = lbl1Let as! String
                             self.lblLid1.text = lbl1String
-                            /*
-                            if(self.lblLid1.isEqual(self.naam))
+                            let gestart:Bool = a.objectForKey("gestart") as! Bool
+                            if(gestart == true)
                             {
-                                //self.lblLid2.textColor = UIColor.redColor()
-                                //self.lblLid1.textColor = UIColor(red: 1.0, green: 0.000, blue: 0.0, alpha: 1.0)
+                                self.btnStart.hidden = true
+                                self.ivGestart5.backgroundColor = UIColor.greenColor()
                             }
-                            */
+                            else
+                            {
+                                self.ivGestart5.hidden = true
+                            }
+                            
                         }
                         if(i == 1)
                         {

@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.window?.rootViewController = initialViewcontroller
                 self.window?.makeKeyAndVisible()
         }
-        //NSUserDefaults.standardUserDefaults().removeObjectForKey("ExtremaPinsName")
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("ExtremaPinsName")
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios_guide#localdatastore/iOS
         Parse.enableLocalDatastore()
